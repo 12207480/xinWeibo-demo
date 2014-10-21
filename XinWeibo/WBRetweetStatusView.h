@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class WBStatusframe;
+@class WBBaseStatusframe;
 @interface WBRetweetStatusView : UIImageView
-@property (nonatomic, strong) WBStatusframe *statusFrame;
+@property (nonatomic, strong) WBBaseStatusframe *statusFrame;
 @end

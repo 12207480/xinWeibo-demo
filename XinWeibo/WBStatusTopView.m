@@ -7,7 +7,7 @@
 //
 
 #import "WBStatusTopView.h"
-#import "WBStatusframe.h"
+#import "WBBaseStatusframe.h"
 #import "WBStatus.h"
 #import "WBUser.h"
 #import "UIImageView+WebCache.h"
@@ -31,8 +31,6 @@
 // 正文
 @property (nonatomic, weak) UILabel *contentLabel;
 
-// 被转发微博的view
-@property (nonatomic, weak) WBRetweetStatusView *retweetView;
 
 @end
 @implementation WBStatusTopView
@@ -103,7 +101,7 @@
 }
 
 
-- (void)setStatusFrame:(WBStatusframe *)statusFrame
+- (void)setStatusFrame:(WBBaseStatusframe *)statusFrame
 {
     _statusFrame = statusFrame;
     

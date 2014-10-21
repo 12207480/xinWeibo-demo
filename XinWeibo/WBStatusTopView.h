@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class WBStatusframe;
+@class WBBaseStatusframe;
+@class WBRetweetStatusView;
 @interface WBStatusTopView : UIImageView
-@property (nonatomic, strong) WBStatusframe *statusFrame;
+@property (nonatomic, strong) WBBaseStatusframe *statusFrame;
+// 被转发微博的view
+@property (nonatomic, weak) WBRetweetStatusView *retweetView;
 @end

@@ -10,12 +10,10 @@
 #import "WBStatusframe.h"
 #import "WBStatus.h"
 #import "WBStatusToolBar.h"
-#import "WBRetweetStatusView.h"
-#import "WBStatusTopView.h"
 
 @interface WBStatusCell()
-// 顶部的view
-@property (nonatomic, weak) WBStatusTopView *topView;
+
+@property (nonatomic, strong) WBStatusframe *statusFrame;
 
 // 微博工具条
 @property (nonatomic, weak) WBStatusToolBar *statusToolBar;
@@ -28,10 +26,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         // Initialization code
-        // 添加原创微博内部子控件
-        //self.contentView.backgroundColor = [UIColor clearColor];
-        [self setupTopView];
-        
         // 添加微博工具条
         [self setupStatusToolBar];
     }
@@ -47,34 +41,6 @@
     }
     return cell;
 }
-/**
- *  设置frame 的位置
- */
-- (void)setFrame:(CGRect)frame
-{
-    frame.origin.y += WBStatusTableBorder;
-    frame.origin.x = WBStatusTableBorder;
-    frame.size.width -= 2 * WBStatusTableBorder;
-    frame.size.height -= WBStatusTableBorder;
-    [super setFrame:frame];
-}
-
-/**
- * 添加原创微博内部子控件
- */
-- (void)setupTopView
-{
-    // 选中cell 的背景
-    self.selectedBackgroundView = [[UIView alloc]init];
-    self.backgroundColor = [UIColor clearColor];
-    
-    // 添加顶部view
-    WBStatusTopView *topView = [[WBStatusTopView alloc]init];
-    [self.contentView addSubview:topView];
-    self.topView = topView;
-
-}
-
 
 /**
  * 添加微博工具条
@@ -93,27 +59,11 @@
  */
 - (void)setStatusFrame:(WBStatusframe *)statusFrame
 {
-    _statusFrame = statusFrame;
-    
-    // 微博数据
-    [self setupTopViewData];
+    [super setStatusFrame:statusFrame];
     
     // 微博工具条
     [self setupStatusToolBarData];
 }
-
-/**
- *  传递原创微博数据
- */
-- (void)setupTopViewData
-{
-    // 设置topview frame
-    self.topView.frame = self.statusFrame.topViewFrame;
-    
-    // 设置topview数据
-    self.topView.statusFrame = self.statusFrame;
-}
-
 
 - (void)setupStatusToolBarData
 {

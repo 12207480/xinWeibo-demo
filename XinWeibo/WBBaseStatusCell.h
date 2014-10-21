@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class WBBaseStatusframe;
+@class WBStatusTopView;
 @interface WBBaseStatusCell : UITableViewCell
+@property (nonatomic, strong) WBBaseStatusframe *statusFrame;
+// 顶部的view
+@property (nonatomic, weak) WBStatusTopView *topView;
 
 @end

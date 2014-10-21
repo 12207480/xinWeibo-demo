@@ -6,11 +6,10 @@
 //  Copyright (c) 2014年 tany. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WBBaseStatusCell.h"
 
 @class WBStatusframe;
-@interface WBStatusCell : UITableViewCell
-@property (nonatomic, strong) WBStatusframe *statusFrame;
+@interface WBStatusCell : WBBaseStatusCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 @end

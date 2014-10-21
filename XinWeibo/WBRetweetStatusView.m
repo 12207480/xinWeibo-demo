@@ -8,7 +8,7 @@
 
 #import "WBRetweetStatusView.h"
 #import "WBStatus.h"
-#import "WBStatusframe.h"
+#import "WBBaseStatusframe.h"
 #import "WBUser.h"
 #import "UIImageView+WebCache.h"
 #import "WBPhoto.h"
@@ -57,7 +57,7 @@
     return self;
 }
 
-- (void)setStatusFrame:(WBStatusframe *)statusFrame
+- (void)setStatusFrame:(WBBaseStatusframe *)statusFrame
 {
     _statusFrame = statusFrame;
     

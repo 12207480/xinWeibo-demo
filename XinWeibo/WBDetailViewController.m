@@ -8,10 +8,13 @@
 
 #import "WBDetailViewController.h"
 #import "WBDetailToolBar.h"
+#import "WBDetailCell.h"
+#import "WBBaseStatusframe.h"
+#import "WBStatus.h"
 
 @interface WBDetailViewController ()
 @property (nonatomic, weak) WBDetailToolBar *toolBar;
-
+@property (nonatomic, strong) WBBaseStatusframe *detailFrame;
 @end
 
 @implementation WBDetailViewController
@@ -24,6 +27,9 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.title = @"微博正文";
     
+
+    self.detailFrame = [[WBBaseStatusframe alloc]init];
+    self.detailFrame.status = self.status;
     // 添加toolbar
     [self setupToolBar];
     
@@ -65,21 +71,34 @@
 // tableview cell创建
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.section == 0) {
+        static NSString *CellID = @"DetailCell";
+        WBDetailCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+        if (cell == nil) {
+            cell = [[WBDetailCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID];
+        }
+        
+        //cell.backgroundColor = [UIColor blueColor];
+        cell.statusFrame = self.detailFrame;
+        return cell;
+    }
     static NSString *CellID = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID];
     }
-    
-    cell.backgroundColor = [UIColor blueColor];
-    
+
     return cell;
+
 }
 
 // tableview cell 高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 44;
+    if (indexPath.section == 0) {
+        return self.detailFrame.cellHeight;
+    }
+    return 40;
 }
 
 // tableview Headerview

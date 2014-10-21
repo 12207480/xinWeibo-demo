@@ -45,6 +45,8 @@
 
 // detail toolbar 高度
 #define DetailToolBarHeight 40
+// 被转发微博的toolbar 高度
+#define RetweetedToolBarHeight 35
 
 
 

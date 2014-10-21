@@ -384,6 +384,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     WBDetailViewController *detail = [[WBDetailViewController alloc]init];
+    WBStatusframe *statusframe =self.statusFrames[indexPath.row];
+    detail.status = statusframe.status;
     [self.navigationController pushViewController:detail animated:YES];
 }
 

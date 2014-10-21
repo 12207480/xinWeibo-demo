@@ -85,6 +85,7 @@
 		B08D250C19E02F9F00BB2F32 /* WBDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08D250B19E02F9F00BB2F32 /* WBDiscoverTableViewController.m */; };
 		B08D250F19E02FAA00BB2F32 /* WBMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08D250E19E02FAA00BB2F32 /* WBMeTableViewController.m */; };
 		B08EF99C19F6481100C3C1CC /* WBBaseStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B08EF99B19F6481100C3C1CC /* WBBaseStatusCell.m */; };
+		B08EF99F19F64A8700C3C1CC /* WBBaseStatusframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B08EF99E19F64A8700C3C1CC /* WBBaseStatusframe.m */; };
 		B0A7817A19EEC1210051FEC4 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0A7816A19EEC1210051FEC4 /* MJRefresh.bundle */; };
 		B0A7817B19EEC1210051FEC4 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7816D19EEC1210051FEC4 /* MJRefreshBaseView.m */; };
 		B0A7817C19EEC1210051FEC4 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7816F19EEC1210051FEC4 /* MJRefreshConst.m */; };
@@ -107,6 +108,7 @@
 		B0AA7B6419E4479B00B4B194 /* WBSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA7B6319E4479B00B4B194 /* WBSearchBar.m */; };
 		B0B0B4B619EBD90C005A14FF /* WBStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B0B4B519EBD90C005A14FF /* WBStatusCell.m */; };
 		B0B0B4B919EBE269005A14FF /* WBStatusframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B0B4B819EBE269005A14FF /* WBStatusframe.m */; };
+		B0B1C72F19F658AD00C834E9 /* WBDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C72E19F658AD00C834E9 /* WBDetailCell.m */; };
 		B0C64F3019E4D72A003B0962 /* WBTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C64F2F19E4D72A003B0962 /* WBTitleButton.m */; };
 		B0D09B0519F0E85400671E7E /* WBComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0419F0E85400671E7E /* WBComposeViewController.m */; };
 		B0D09B0819F0EB3B00671E7E /* WBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0719F0EB3B00671E7E /* WBTextView.m */; };
@@ -274,6 +276,8 @@
 		B08D250E19E02FAA00BB2F32 /* WBMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMeTableViewController.m; sourceTree = "<group>"; };
 		B08EF99A19F6481100C3C1CC /* WBBaseStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBaseStatusCell.h; sourceTree = "<group>"; };
 		B08EF99B19F6481100C3C1CC /* WBBaseStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBaseStatusCell.m; sourceTree = "<group>"; };
+		B08EF99D19F64A8700C3C1CC /* WBBaseStatusframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBaseStatusframe.h; sourceTree = "<group>"; };
+		B08EF99E19F64A8700C3C1CC /* WBBaseStatusframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBaseStatusframe.m; sourceTree = "<group>"; };
 		B0A6360C19EF67F9001A6390 /* WBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCommon.h; sourceTree = "<group>"; };
 		B0A7816A19EEC1210051FEC4 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		B0A7816B19EEC1210051FEC4 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
@@ -319,6 +323,8 @@
 		B0B0B4B519EBD90C005A14FF /* WBStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatusCell.m; sourceTree = "<group>"; };
 		B0B0B4B719EBE269005A14FF /* WBStatusframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusframe.h; sourceTree = "<group>"; };
 		B0B0B4B819EBE269005A14FF /* WBStatusframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatusframe.m; sourceTree = "<group>"; };
+		B0B1C72D19F658AD00C834E9 /* WBDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailCell.h; sourceTree = "<group>"; };
+		B0B1C72E19F658AD00C834E9 /* WBDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailCell.m; sourceTree = "<group>"; };
 		B0C64F2E19E4D72A003B0962 /* WBTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTitleButton.h; sourceTree = "<group>"; };
 		B0C64F2F19E4D72A003B0962 /* WBTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTitleButton.m; sourceTree = "<group>"; };
 		B0D09B0319F0E85400671E7E /* WBComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBComposeViewController.h; sourceTree = "<group>"; };
@@ -382,6 +388,7 @@
 			children = (
 				B04F1E5D19F60FED00516628 /* Controller */,
 				B04F1E6E19F615FE00516628 /* View */,
+				B0B1C73619F6639100C834E9 /* Model */,
 			);
 			name = "Detail(微博正文)";
 			sourceTree = "<group>";
@@ -426,6 +433,8 @@
 		B04F1E6719F6119B00516628 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B08EF99D19F64A8700C3C1CC /* WBBaseStatusframe.h */,
+				B08EF99E19F64A8700C3C1CC /* WBBaseStatusframe.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -435,6 +444,8 @@
 			children = (
 				B04F1E6F19F617BE00516628 /* WBDetailToolBar.h */,
 				B04F1E7019F617BE00516628 /* WBDetailToolBar.m */,
+				B0B1C72D19F658AD00C834E9 /* WBDetailCell.h */,
+				B0B1C72E19F658AD00C834E9 /* WBDetailCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -846,6 +857,13 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		B0B1C73619F6639100C834E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		B0C64F2D19E4D6AC003B0962 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1101,6 +1119,7 @@
 				B0AA51F519E2E47D0030DDBE /* WBTabBar.m in Sources */,
 				B07D724219E6649500A7F6A6 /* AFURLConnectionOperation.m in Sources */,
 				B07D724419E6649500A7F6A6 /* AFURLResponseSerialization.m in Sources */,
+				B0B1C72F19F658AD00C834E9 /* WBDetailCell.m in Sources */,
 				B0AA7B6419E4479B00B4B194 /* WBSearchBar.m in Sources */,
 				B0D09B0B19F0FFDC00671E7E /* WBComposeToolBar.m in Sources */,
 				B045834E19EE3D4200C21597 /* WBPhotoView.m in Sources */,
@@ -1132,6 +1151,7 @@
 				B045836419EE549B00C21597 /* MJPhotoBrowser.m in Sources */,
 				B0AA7B5F19E43F5D00B4B194 /* UIBarButtonItem+WB.m in Sources */,
 				B0A8CBDE19ED506D006D3E75 /* WBStatusTopView.m in Sources */,
+				B08EF99F19F64A8700C3C1CC /* WBBaseStatusframe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class WBStatus;
 @interface WBDetailViewController : UITableViewController
-
+@property (nonatomic, strong) WBStatus *status;
 @end
