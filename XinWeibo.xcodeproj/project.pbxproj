@@ -117,6 +117,7 @@
 		B0D09B0819F0EB3B00671E7E /* WBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0719F0EB3B00671E7E /* WBTextView.m */; };
 		B0D09B0B19F0FFDC00671E7E /* WBComposeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0A19F0FFDC00671E7E /* WBComposeToolBar.m */; };
 		B0DB1B7319E2AB66009FD1A5 /* UIImage+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DB1B7219E2AB66009FD1A5 /* UIImage+WB.m */; };
+		B0F2CC4019F6B0BD00296DA3 /* WBDetailHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F2CC3F19F6B0BD00296DA3 /* WBDetailHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +345,8 @@
 		B0D09B0A19F0FFDC00671E7E /* WBComposeToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBComposeToolBar.m; sourceTree = "<group>"; };
 		B0DB1B7119E2AB66009FD1A5 /* UIImage+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WB.h"; sourceTree = "<group>"; };
 		B0DB1B7219E2AB66009FD1A5 /* UIImage+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WB.m"; sourceTree = "<group>"; };
+		B0F2CC3E19F6B0BD00296DA3 /* WBDetailHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailHeader.h; sourceTree = "<group>"; };
+		B0F2CC3F19F6B0BD00296DA3 /* WBDetailHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,6 +462,8 @@
 				B0B1C74119F6830400C834E9 /* WBDetailRetweetView.m */,
 				B0B1C74319F6861800C834E9 /* WBDetailTopView.h */,
 				B0B1C74419F6861800C834E9 /* WBDetailTopView.m */,
+				B0F2CC3E19F6B0BD00296DA3 /* WBDetailHeader.h */,
+				B0F2CC3F19F6B0BD00296DA3 /* WBDetailHeader.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1131,6 +1136,7 @@
 				B07D724519E6649500A7F6A6 /* AFURLSessionManager.m in Sources */,
 				B07D72B519E6DCF800A7F6A6 /* UIImage+GIF.m in Sources */,
 				B045836719EE549B00C21597 /* MJPhotoToolbar.m in Sources */,
+				B0F2CC4019F6B0BD00296DA3 /* WBDetailHeader.m in Sources */,
 				B045836619EE549B00C21597 /* MJPhotoProgressView.m in Sources */,
 				B08D250C19E02F9F00BB2F32 /* WBDiscoverTableViewController.m in Sources */,
 				B0AA51F519E2E47D0030DDBE /* WBTabBar.m in Sources */,

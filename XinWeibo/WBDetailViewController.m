@@ -11,10 +11,12 @@
 #import "WBDetailCell.h"
 #import "WBDetailCellframe.h"
 #import "WBStatus.h"
+#import "WBDetailHeader.h"
 
 @interface WBDetailViewController ()
 @property (nonatomic, weak) WBDetailToolBar *toolBar;
 @property (nonatomic, strong) WBDetailCellframe *detailFrame;
+@property (nonatomic, strong) WBDetailHeader *header;
 @end
 
 @implementation WBDetailViewController
@@ -94,6 +96,12 @@
 
 }
 
+// 取消点击高亮
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return indexPath.section;
+}
+
 // tableview cell 高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -109,7 +117,11 @@
     if (section == 0) {
         return nil;
     }
-    return [UIButton buttonWithType:UIButtonTypeContactAdd];
+    if (self.header == nil) {
+        self.header = [[WBDetailHeader alloc]init];
+        self.header.status = self.status;
+    }
+    return self.header;
 }
 
 // tableview Headerview高度

@@ -99,6 +99,7 @@
 - (void)tabBar:(WBTabBar *)tabBar didSelectedButtonfrom:(NSInteger)from to:(NSInteger)to
 {
     self.selectedIndex = to;
+    
     if (to == 0) { // 点击首页
         [self.home refreshData];
     }
