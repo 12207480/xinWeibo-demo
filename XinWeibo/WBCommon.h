@@ -42,3 +42,11 @@
 
 // titlebutton 宽度
 #define TitleButtonimageWidth 20
+
+// detail toolbar 高度
+#define DetailToolBarHeight 40
+
+
+
+
+

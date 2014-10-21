@@ -20,6 +20,7 @@
 		B04D7D6619F2353700101D8B /* WBComposePhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = B04D7D6519F2353700101D8B /* WBComposePhotosView.m */; };
 		B04F1E6319F610B400516628 /* WBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F1E6219F610B400516628 /* WBDetailViewController.m */; };
 		B04F1E6D19F6126300516628 /* WBBaseToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F1E6C19F6126300516628 /* WBBaseToolBar.m */; };
+		B04F1E7119F617BE00516628 /* WBDetailToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F1E7019F617BE00516628 /* WBDetailToolBar.m */; };
 		B057BF6619F35507009C5740 /* WBHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B057BF6519F35507009C5740 /* WBHttpTool.m */; };
 		B07D722819E65D6900A7F6A6 /* WBOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07D722719E65D6900A7F6A6 /* WBOAuthViewController.m */; };
 		B07D723D19E6649500A7F6A6 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B07D722B19E6649500A7F6A6 /* AFHTTPRequestOperation.m */; };
@@ -83,6 +84,7 @@
 		B08D250919E02F8600BB2F32 /* WBMsgTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08D250819E02F8600BB2F32 /* WBMsgTableViewController.m */; };
 		B08D250C19E02F9F00BB2F32 /* WBDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08D250B19E02F9F00BB2F32 /* WBDiscoverTableViewController.m */; };
 		B08D250F19E02FAA00BB2F32 /* WBMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08D250E19E02FAA00BB2F32 /* WBMeTableViewController.m */; };
+		B08EF99C19F6481100C3C1CC /* WBBaseStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B08EF99B19F6481100C3C1CC /* WBBaseStatusCell.m */; };
 		B0A7817A19EEC1210051FEC4 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0A7816A19EEC1210051FEC4 /* MJRefresh.bundle */; };
 		B0A7817B19EEC1210051FEC4 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7816D19EEC1210051FEC4 /* MJRefreshBaseView.m */; };
 		B0A7817C19EEC1210051FEC4 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7816F19EEC1210051FEC4 /* MJRefreshConst.m */; };
@@ -148,6 +150,8 @@
 		B04F1E6219F610B400516628 /* WBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailViewController.m; sourceTree = "<group>"; };
 		B04F1E6B19F6126300516628 /* WBBaseToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBaseToolBar.h; sourceTree = "<group>"; };
 		B04F1E6C19F6126300516628 /* WBBaseToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBaseToolBar.m; sourceTree = "<group>"; };
+		B04F1E6F19F617BE00516628 /* WBDetailToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailToolBar.h; sourceTree = "<group>"; };
+		B04F1E7019F617BE00516628 /* WBDetailToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailToolBar.m; sourceTree = "<group>"; };
 		B057BF6419F35507009C5740 /* WBHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpTool.h; sourceTree = "<group>"; };
 		B057BF6519F35507009C5740 /* WBHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHttpTool.m; sourceTree = "<group>"; };
 		B07D722619E65D6900A7F6A6 /* WBOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBOAuthViewController.h; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 		B08D250B19E02F9F00BB2F32 /* WBDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDiscoverTableViewController.m; sourceTree = "<group>"; };
 		B08D250D19E02FAA00BB2F32 /* WBMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMeTableViewController.h; sourceTree = "<group>"; };
 		B08D250E19E02FAA00BB2F32 /* WBMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMeTableViewController.m; sourceTree = "<group>"; };
+		B08EF99A19F6481100C3C1CC /* WBBaseStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBBaseStatusCell.h; sourceTree = "<group>"; };
+		B08EF99B19F6481100C3C1CC /* WBBaseStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBBaseStatusCell.m; sourceTree = "<group>"; };
 		B0A6360C19EF67F9001A6390 /* WBCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCommon.h; sourceTree = "<group>"; };
 		B0A7816A19EEC1210051FEC4 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		B0A7816B19EEC1210051FEC4 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
@@ -375,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				B04F1E5D19F60FED00516628 /* Controller */,
+				B04F1E6E19F615FE00516628 /* View */,
 			);
 			name = "Detail(微博正文)";
 			sourceTree = "<group>";
@@ -410,6 +417,8 @@
 			children = (
 				B04F1E6B19F6126300516628 /* WBBaseToolBar.h */,
 				B04F1E6C19F6126300516628 /* WBBaseToolBar.m */,
+				B08EF99A19F6481100C3C1CC /* WBBaseStatusCell.h */,
+				B08EF99B19F6481100C3C1CC /* WBBaseStatusCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -419,6 +428,15 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		B04F1E6E19F615FE00516628 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B04F1E6F19F617BE00516628 /* WBDetailToolBar.h */,
+				B04F1E7019F617BE00516628 /* WBDetailToolBar.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		B07D722319E65CE200A7F6A6 /* OAuth(授权) */ = {
@@ -1063,6 +1081,7 @@
 				B07D728619E6D7BA00A7F6A6 /* NSObject+MJCoding.m in Sources */,
 				B07D728119E6D7BA00A7F6A6 /* MJIvar.m in Sources */,
 				B0AA51FB19E2F69D0030DDBE /* WBTabBarButton.m in Sources */,
+				B08EF99C19F6481100C3C1CC /* WBBaseStatusCell.m in Sources */,
 				B07D72B919E6DCF800A7F6A6 /* UIImageView+WebCache.m in Sources */,
 				B07D72B619E6DCF800A7F6A6 /* UIImage+MultiFormat.m in Sources */,
 				B07D728519E6D7BA00A7F6A6 /* MJTypeEncoding.m in Sources */,
@@ -1097,6 +1116,7 @@
 				B08D250F19E02FAA00BB2F32 /* WBMeTableViewController.m in Sources */,
 				B07D72B119E6DCF800A7F6A6 /* SDWebImageDownloaderOperation.m in Sources */,
 				B045835119EE400600C21597 /* WBPhotosView.m in Sources */,
+				B04F1E7119F617BE00516628 /* WBDetailToolBar.m in Sources */,
 				B0A7818119EEC1210051FEC4 /* UIView+MJExtension.m in Sources */,
 				B08D250619E02F7A00BB2F32 /* WBHomeTableViewController.m in Sources */,
 				B07D72BA19E6DCF800A7F6A6 /* UIView+WebCacheOperation.m in Sources */,

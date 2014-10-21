@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 tany. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "WBBaseToolBar.h"
 
 @class WBStatus;
-@interface WBStatusToolBar : UIImageView
+@interface WBStatusToolBar :WBBaseToolBar
 @property (nonatomic, strong) WBStatus *status;
 @end

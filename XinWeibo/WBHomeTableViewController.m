@@ -19,6 +19,7 @@
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
 #import "WBHttpTool.h"
+#import "WBDetailViewController.h"
 
 #define WBTitleButtonImageUp -1
 #define WBTitleButtonImageDown 0
@@ -378,6 +379,12 @@
 {
     WBStatusframe *statusFrame = self.statusFrames[indexPath.row];
     return statusFrame.cellHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WBDetailViewController *detail = [[WBDetailViewController alloc]init];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 
