@@ -31,7 +31,6 @@
 // 正文
 @property (nonatomic, weak) UILabel *contentLabel;
 
-
 @end
 @implementation WBStatusTopView
 

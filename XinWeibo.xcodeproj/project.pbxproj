@@ -109,6 +109,9 @@
 		B0B0B4B619EBD90C005A14FF /* WBStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B0B4B519EBD90C005A14FF /* WBStatusCell.m */; };
 		B0B0B4B919EBE269005A14FF /* WBStatusframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B0B4B819EBE269005A14FF /* WBStatusframe.m */; };
 		B0B1C72F19F658AD00C834E9 /* WBDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C72E19F658AD00C834E9 /* WBDetailCell.m */; };
+		B0B1C73F19F67F7E00C834E9 /* WBDetailCellframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C73E19F67F7E00C834E9 /* WBDetailCellframe.m */; };
+		B0B1C74219F6830400C834E9 /* WBDetailRetweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C74119F6830400C834E9 /* WBDetailRetweetView.m */; };
+		B0B1C74519F6861800C834E9 /* WBDetailTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C74419F6861800C834E9 /* WBDetailTopView.m */; };
 		B0C64F3019E4D72A003B0962 /* WBTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C64F2F19E4D72A003B0962 /* WBTitleButton.m */; };
 		B0D09B0519F0E85400671E7E /* WBComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0419F0E85400671E7E /* WBComposeViewController.m */; };
 		B0D09B0819F0EB3B00671E7E /* WBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0719F0EB3B00671E7E /* WBTextView.m */; };
@@ -325,6 +328,12 @@
 		B0B0B4B819EBE269005A14FF /* WBStatusframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatusframe.m; sourceTree = "<group>"; };
 		B0B1C72D19F658AD00C834E9 /* WBDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailCell.h; sourceTree = "<group>"; };
 		B0B1C72E19F658AD00C834E9 /* WBDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailCell.m; sourceTree = "<group>"; };
+		B0B1C73D19F67F7E00C834E9 /* WBDetailCellframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailCellframe.h; sourceTree = "<group>"; };
+		B0B1C73E19F67F7E00C834E9 /* WBDetailCellframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailCellframe.m; sourceTree = "<group>"; };
+		B0B1C74019F6830400C834E9 /* WBDetailRetweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailRetweetView.h; sourceTree = "<group>"; };
+		B0B1C74119F6830400C834E9 /* WBDetailRetweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailRetweetView.m; sourceTree = "<group>"; };
+		B0B1C74319F6861800C834E9 /* WBDetailTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailTopView.h; sourceTree = "<group>"; };
+		B0B1C74419F6861800C834E9 /* WBDetailTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailTopView.m; sourceTree = "<group>"; };
 		B0C64F2E19E4D72A003B0962 /* WBTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTitleButton.h; sourceTree = "<group>"; };
 		B0C64F2F19E4D72A003B0962 /* WBTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTitleButton.m; sourceTree = "<group>"; };
 		B0D09B0319F0E85400671E7E /* WBComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBComposeViewController.h; sourceTree = "<group>"; };
@@ -446,6 +455,10 @@
 				B04F1E7019F617BE00516628 /* WBDetailToolBar.m */,
 				B0B1C72D19F658AD00C834E9 /* WBDetailCell.h */,
 				B0B1C72E19F658AD00C834E9 /* WBDetailCell.m */,
+				B0B1C74019F6830400C834E9 /* WBDetailRetweetView.h */,
+				B0B1C74119F6830400C834E9 /* WBDetailRetweetView.m */,
+				B0B1C74319F6861800C834E9 /* WBDetailTopView.h */,
+				B0B1C74419F6861800C834E9 /* WBDetailTopView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -860,6 +873,8 @@
 		B0B1C73619F6639100C834E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B0B1C73D19F67F7E00C834E9 /* WBDetailCellframe.h */,
+				B0B1C73E19F67F7E00C834E9 /* WBDetailCellframe.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1079,6 +1094,7 @@
 				B08D250319E02F4800BB2F32 /* WBTabBarViewController.m in Sources */,
 				B07D72B719E6DCF800A7F6A6 /* UIImage+WebP.m in Sources */,
 				B07D72AB19E6DCF800A7F6A6 /* MKAnnotationView+WebCache.m in Sources */,
+				B0B1C73F19F67F7E00C834E9 /* WBDetailCellframe.m in Sources */,
 				B0A7817B19EEC1210051FEC4 /* MJRefreshBaseView.m in Sources */,
 				B07D728819E6D7BA00A7F6A6 /* NSObject+MJMember.m in Sources */,
 				B0C64F3019E4D72A003B0962 /* WBTitleButton.m in Sources */,
@@ -1094,6 +1110,7 @@
 				B07D727F19E6D7BA00A7F6A6 /* MJConst.m in Sources */,
 				B07D72B819E6DCF800A7F6A6 /* UIImageView+HighlightedWebCache.m in Sources */,
 				B045836519EE549B00C21597 /* MJPhotoLoadingView.m in Sources */,
+				B0B1C74519F6861800C834E9 /* WBDetailTopView.m in Sources */,
 				B07D72AC19E6DCF800A7F6A6 /* NSData+ImageContentType.m in Sources */,
 				B07D725C19E6928800A7F6A6 /* MBProgressHUD+MJ.m in Sources */,
 				B07D728619E6D7BA00A7F6A6 /* NSObject+MJCoding.m in Sources */,
@@ -1144,6 +1161,7 @@
 				B0A7818019EEC1210051FEC4 /* UIScrollView+MJRefresh.m in Sources */,
 				B07D724A19E6716900A7F6A6 /* WBAccount.m in Sources */,
 				B07D728419E6D7BA00A7F6A6 /* MJType.m in Sources */,
+				B0B1C74219F6830400C834E9 /* WBDetailRetweetView.m in Sources */,
 				B07D724119E6649500A7F6A6 /* AFSecurityPolicy.m in Sources */,
 				B0A8CBD819ED1E61006D3E75 /* WBStatusToolBar.m in Sources */,
 				B07D724E19E67B4C00A7F6A6 /* WBAccountTool.m in Sources */,

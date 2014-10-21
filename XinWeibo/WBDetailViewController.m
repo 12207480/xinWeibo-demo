@@ -9,12 +9,12 @@
 #import "WBDetailViewController.h"
 #import "WBDetailToolBar.h"
 #import "WBDetailCell.h"
-#import "WBBaseStatusframe.h"
+#import "WBDetailCellframe.h"
 #import "WBStatus.h"
 
 @interface WBDetailViewController ()
 @property (nonatomic, weak) WBDetailToolBar *toolBar;
-@property (nonatomic, strong) WBBaseStatusframe *detailFrame;
+@property (nonatomic, strong) WBDetailCellframe *detailFrame;
 @end
 
 @implementation WBDetailViewController
@@ -28,7 +28,7 @@
     self.title = @"微博正文";
     
 
-    self.detailFrame = [[WBBaseStatusframe alloc]init];
+    self.detailFrame = [[WBDetailCellframe alloc]init];
     self.detailFrame.status = self.status;
     // 添加toolbar
     [self setupToolBar];

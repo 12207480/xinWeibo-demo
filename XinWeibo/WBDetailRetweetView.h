@@ -1,12 +1,13 @@
 //
-//  WBDetailCell.h
+//  WBDetailRetweetView.h
 //  XinWeibo
 //
 //  Created by tanyang on 14/10/21.
 //  Copyright (c) 2014年 tany. All rights reserved.
 //
 
-#import "WBBaseStatusCell.h"
+#import "WBRetweetStatusView.h"
 
-@interface WBDetailCell : WBBaseStatusCell
+@interface WBDetailRetweetView : WBRetweetStatusView
+
 @end

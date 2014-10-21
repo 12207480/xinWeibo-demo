@@ -14,6 +14,8 @@
     @protected
     CGFloat _cellHeight;
     CGRect _retweetViewFrame;
+    CGRect _topViewFrame;
+    WBStatus *_status;
     
 }
 @property (nonatomic, strong) WBStatus *status;
@@ -49,4 +51,13 @@
  */
 @property (nonatomic, assign, readonly) CGFloat cellHeight;
 
+/**
+ *  设置转发微博reweetView 内容的frame
+ */
+- (void)setRetweetViewContentFrame:(WBStatus *)status;
+
+/**
+ *  设置原文微博topview内容的frame
+ */
+- (void)setTopViewContentFrame:(WBStatus *)status;
 @end

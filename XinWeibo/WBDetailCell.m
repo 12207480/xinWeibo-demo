@@ -10,34 +10,37 @@
 #import "WBStatusTopView.h"
 #import "WBRetweetStatusView.h"
 #import "WBDetailViewController.h"
-#import "WBBaseStatusframe.h"
+#import "WBDetailCellframe.h"
 #import "WBStatus.h"
-#import "WBTabBarViewController.h"
+#import "WBDetailTopView.h"
+
 
 @interface WBDetailCell()
-
+@property (nonatomic, strong) WBDetailCellframe *statusFrame;
 @end
 @implementation WBDetailCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        // 监听被转发微博的点击
-        [self.topView.retweetView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showRetweeted)]];
+        
+        [self.topView removeFromSuperview];
+        // 选中cell 的背景
+        self.selectedBackgroundView = [[UIView alloc]init];
+        self.backgroundColor = [UIColor clearColor];
+        
+        // 添加顶部view
+        WBDetailTopView *topView = [[WBDetailTopView alloc]init];
+        [self.contentView addSubview:topView];
+        self.topView = topView;
+
     }
     return self;
 }
 
-- (void)showRetweeted
+- (void)setStatusFrame:(WBDetailCellframe *)statusFrame
 {
-    // 展示被转发的微博
-    WBDetailViewController *detail = [[WBDetailViewController alloc] init];
-    detail.status = self.statusFrame.status.retweeted_status;
-    
-    WBTabBarViewController *main = (WBTabBarViewController *)self.window.rootViewController;
-    UINavigationController *nav =  (UINavigationController *)main.selectedViewController;
-    
-    [nav pushViewController:detail animated:YES];
+    [super setStatusFrame:statusFrame];
 }
 
 /*

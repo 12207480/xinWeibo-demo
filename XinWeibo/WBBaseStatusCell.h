@@ -14,5 +14,4 @@
 @property (nonatomic, strong) WBBaseStatusframe *statusFrame;
 // 顶部的view
 @property (nonatomic, weak) WBStatusTopView *topView;
-
 @end
