@@ -15,10 +15,15 @@
 #import "WBTabBar.h"
 #import "WBNavigationController.h"
 #import "WBComposeViewController.h"
+#import "WBAccount.h"
+#import "WBAccountTool.h"
+#import "WBHttpTool.h"
 
 @interface WBTabBarViewController ()<WBTabbarDekegate>
 @property (nonatomic, weak) WBTabBar *customTabBar;
-
+@property (nonatomic, weak) WBHomeTableViewController *home;
+@property (nonatomic, weak) WBMsgTableViewController *msg;
+@property (nonatomic, weak) WBMeTableViewController *me;
 @end
 
 @implementation WBTabBarViewController
@@ -51,7 +56,35 @@
     
     // 初始化所以子控制器
     [self setupAllChildViewControls];
+    
+    // 定时检查未读数
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(checkUnreadCount) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop]addTimer:timer forMode:NSRunLoopCommonModes];
 }
+
+- (void)checkUnreadCount
+{
+    // 封装参数请求
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = [WBAccountTool account].access_token;
+    params[@"uid"] = @([WBAccountTool account].uid);
+    
+    // 发送请求
+    [WBHttpTool getWithURL:@"https://rm.api.weibo.com/2/remind/unread_count.json" params:params success:^(id json) {
+        //WBLog(@"加载home_timeline成功：%@",json);
+        int unreadStatusCount = [json[@"status"] intValue];
+        int unreadMsgCount = [json[@"notice"] intValue];
+        int unreadFansCount = [json[@"follower"] intValue];
+        
+        self.home.tabBarItem.badgeValue = unreadStatusCount == 0 ? nil : [NSString stringWithFormat:@"%d",unreadStatusCount];
+        self.msg.tabBarItem.badgeValue = unreadMsgCount == 0 ? nil : [NSString stringWithFormat:@"%d",unreadMsgCount];
+        self.me.tabBarItem.badgeValue = unreadFansCount == 0 ? nil : [NSString stringWithFormat:@"%d",unreadFansCount];
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
+
+}
+
 
 - (void)setupTabBar
 {
@@ -66,6 +99,9 @@
 - (void)tabBar:(WBTabBar *)tabBar didSelectedButtonfrom:(NSInteger)from to:(NSInteger)to
 {
     self.selectedIndex = to;
+    if (to == 0) { // 点击首页
+        [self.home refreshData];
+    }
 }
 
 // tabbar代理方法 点击了加号按钮
@@ -82,11 +118,13 @@
     WBHomeTableViewController *home = [[WBHomeTableViewController alloc]init];
     //home.tabBarItem.badgeValue = @"20";
     [self addChildViewControl:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    self.home = home;
     
     // 消息控制器
     WBMsgTableViewController *msg = [[WBMsgTableViewController alloc]init];
     //msg.tabBarItem.badgeValue = @"30";
     [self addChildViewControl:msg title:@"消息" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
+    self.msg = msg;
     
     // 广场控制器
     WBDiscoverTableViewController *discover = [[WBDiscoverTableViewController alloc]init];
@@ -97,6 +135,7 @@
     WBMeTableViewController *me = [[WBMeTableViewController alloc]init];
     //me.tabBarItem.badgeValue = @"80";
     [self addChildViewControl:me title:@"我" imageName:@"tabbar_profile" selectedImageName:@"tabbar_profile_selected"];
+    self.me = me;
 
 
 }

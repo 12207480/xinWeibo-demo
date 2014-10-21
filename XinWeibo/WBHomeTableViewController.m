@@ -102,8 +102,18 @@
     [self.tableView addFooterWithTarget:self action:@selector(loadMoreData)];
 }
 
+- (void)refreshData
+{
+    if (self.tabBarItem.badgeValue) {
+        [self.tableView headerBeginRefreshing];
+    }
+}
+
 - (void)loadNewData
 {
+    // 清除提醒数字
+    self.tabBarItem.badgeValue = nil;
+    
     // 封装参数请求
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = [WBAccountTool account].access_token;

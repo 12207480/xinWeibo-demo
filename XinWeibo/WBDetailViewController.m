@@ -27,6 +27,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.title = @"微博正文";
     
+    
 
     self.detailFrame = [[WBDetailCellframe alloc]init];
     self.detailFrame.status = self.status;
@@ -35,6 +36,7 @@
     
 }
 
+// 设置tableview工具条
 - (void)setupToolBar
 {
     WBDetailToolBar *toolBar = [[WBDetailToolBar alloc]init];
