@@ -12,6 +12,8 @@
 #import "WBDetailCellframe.h"
 #import "WBStatus.h"
 #import "WBDetailHeader.h"
+#import "WBComment.h"
+#import "WBStatusTool.h"
 
 @interface WBDetailViewController ()<WBDetailHeaderDelegate>
 @property (nonatomic, weak) WBDetailToolBar *toolBar;
@@ -135,10 +137,18 @@
 - (void)detailHeader:(WBDetailHeader *)header clickedBtnType:(DetailHeaderBtnType)index
 {
     if (index == kDetailHeaderBtnTypeComment) { // 点击了评论
-        
+        [WBStatusTool commentsDataWithSinceId:0 maxId:0 statusId:[self.status.idstr longLongValue]success:^(NSArray *comments) {
+            NSLog(@"%@",comments);
+        } failure:^(NSError *error) {
+            
+        }];
         
     } else if (index == kDetailHeaderBtnTypeRepost) { // 点击了转发
-        
+        [WBStatusTool reportsDataWithSinceId:0 maxId:0 statusId:[self.status.idstr longLongValue] success:^(NSArray *reports) {
+            NSLog(@"%@",reports);
+        } failure:^(NSError *error) {
+
+        }];
     }
 }
 

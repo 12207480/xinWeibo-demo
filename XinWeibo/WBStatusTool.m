@@ -12,6 +12,7 @@
 #import "WBAccountTool.h"
 #import "WBStatus.h"
 #import "MJExtension.h"
+#import "WBComment.h"
 
 @implementation WBStatusTool
 
@@ -36,6 +37,52 @@
     }];
     
     
+}
+
++ (void)commentsDataWithSinceId:(long long)sinceId maxId:(long long)maxId statusId:(long long)statusId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
+{
+    // 封装参数请求
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = [WBAccountTool account].access_token;
+    params[@"count"] = @20;
+    params[@"since_id"] = @(sinceId);
+    params[@"max_id"] = @(maxId);
+    params[@"id"] = @(statusId);
+    
+    // 发送请求
+    [WBHttpTool getWithURL:@"https://api.weibo.com/2/comments/show.json" params:params success:^(id json) {
+        if(success) {
+            NSArray *commments = [WBComment objectArrayWithKeyValuesArray:json[@"comments"]];
+            success(commments);
+        }
+    } failure:^(NSError *error) {
+        if(failure)
+            failure(error);
+    }];
+
+}
+
++ (void)reportsDataWithSinceId:(long long)sinceId maxId:(long long)maxId statusId:(long long)statusId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
+{
+    // 封装参数请求
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = [WBAccountTool account].access_token;
+    params[@"count"] = @15;
+    params[@"since_id"] = @(sinceId);
+    params[@"max_id"] = @(maxId);
+    params[@"id"] = @(statusId);
+    
+    // 发送请求
+    [WBHttpTool getWithURL:@"https://api.weibo.com/2/statuses/repost_timeline.json" params:params success:^(id json) {
+        if(success) {
+            NSArray *statuses = [WBStatus objectArrayWithKeyValuesArray:json[@"reposts"]];
+            success(statuses);
+        }
+    } failure:^(NSError *error) {
+        if(failure)
+            failure(error);
+    }];
+
 }
 
 @end

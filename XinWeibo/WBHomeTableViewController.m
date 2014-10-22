@@ -9,8 +9,6 @@
 #import "WBHomeTableViewController.h"
 #import "UIBarButtonItem+WB.h"
 #import "WBTitleButton.h"
-#import "WBAccountTool.h"
-#import "WBAccount.h"
 #import "WBUser.h"
 #import "WBStatus.h"
 #import "WBStatusframe.h"
