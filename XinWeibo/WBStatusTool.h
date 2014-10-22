@@ -17,5 +17,5 @@
  *  @param success 请求成功后的回调，传回status数组
  *  @param failure 请求失败后的回调
  */
-+ (void)statusWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *status))success failure:(void(^)(NSError *error))failure;
++ (void)statusDataWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *statuses))success failure:(void(^)(NSError *error))failure;
 @end

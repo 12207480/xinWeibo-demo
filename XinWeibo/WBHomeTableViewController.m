@@ -11,17 +11,16 @@
 #import "WBTitleButton.h"
 #import "WBAccountTool.h"
 #import "WBAccount.h"
-
-#import "MJExtension.h"
-#import "WBStatus.h"
-
 #import "WBUser.h"
+#import "WBStatus.h"
 #import "WBStatusframe.h"
 #import "WBStatusCell.h"
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
 #import "WBHttpTool.h"
 #import "WBDetailViewController.h"
+#import "WBStatusTool.h"
+#import "WBUserTool.h"
 
 #define WBTitleButtonImageUp -1
 #define WBTitleButtonImageDown 0
@@ -60,16 +59,8 @@
 
 - (void)setupUserData
 {
-    // 封装参数请求
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"access_token"] = [WBAccountTool account].access_token;
-    params[@"uid"] = @([WBAccountTool account].uid);
-    
-    // 发送请求
-    [WBHttpTool getWithURL:@"https://api.weibo.com/2/users/show.json" params:params success:^(id json) {
-        //WBLog(@"加载home_timeline成功：%@",json);
-        // 将字典数组转为模型数组
-        WBUser *user = [WBUser objectWithKeyValues:json];
+    // 获取用户数据
+    [WBUserTool userDataWithSuccess:^(WBUser *user) {
         // 设置标题
         [self.titleButton setTitle:user.name forState:UIControlStateNormal];
     } failure:^(NSError *error) {
@@ -116,99 +107,81 @@
     // 清除提醒数字
     self.tabBarItem.badgeValue = nil;
     
-    // 封装参数请求
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"access_token"] = [WBAccountTool account].access_token;
-    params[@"count"] = @10;
-    
+    long long sinceId = 0;
     // 判断是否第一次调用
     if (self.statusFrames.count) {
         WBStatusframe *statusFrame = self.statusFrames[0];
-        params[@"since_id"] = statusFrame.status.idstr;
+        sinceId = [statusFrame.status.idstr longLongValue];
     }
     
     // 发送请求
-    [WBHttpTool getWithURL:@"https://api.weibo.com/2/statuses/home_timeline.json" params:params success:^(id json) {
-        //NSLog(@"加载home_timeline成功：%@",responseObject);
-        // 将字典数组转为模型数组
+    [WBStatusTool statusDataWithSinceId:sinceId maxId:0 success:^(NSArray *statuses) {
+        //statusFrames添加status数据
         NSMutableArray *statusFrames = [NSMutableArray array];
-        NSArray *statuses = [WBStatus objectArrayWithKeyValuesArray:json[@"statuses"]];
-        
         for (WBStatus *status in statuses) {
+            
             WBStatusframe *statusFrame = [[WBStatusframe alloc]init];
             statusFrame.status = status;
             [statusFrames addObject:statusFrame];
         }
         
-        // 添加新旧数据
-        NSMutableArray *tmpArray = [NSMutableArray array];
-        [tmpArray addObjectsFromArray:statusFrames];
-        [tmpArray addObjectsFromArray:self.statusFrames];
-        
-        self.statusFrames = tmpArray;
-        
-        // 刷新表格
-        [self.tableView reloadData];
-        
-        // 让刷新控件停止显示刷新状态
-        [self.tableView headerEndRefreshing];
-        
-        // 显示最新微博的数量
-        [self showNewStatusCount:statusFrames.count];
-        
-
+            // 添加新旧数据
+            NSMutableArray *tmpArray = [NSMutableArray array];
+            [tmpArray addObjectsFromArray:statusFrames];
+            [tmpArray addObjectsFromArray:self.statusFrames];
+            
+            self.statusFrames = tmpArray;
+            
+            // 刷新表格
+            [self.tableView reloadData];
+            
+            // 让刷新控件停止显示刷新状态
+            [self.tableView headerEndRefreshing];
+            
+            // 显示最新微博的数量
+            [self showNewStatusCount:statusFrames.count];
     } failure:^(NSError *error) {
         WBLog(@"加载home_timeline失败：%@",error);
         // 让刷新控件停止显示刷新状态
         [self.tableView headerEndRefreshing];
-    }];
+    } ];
     
 }
 
 - (void)loadMoreData
 {
-    // 封装参数请求
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"access_token"] = [WBAccountTool account].access_token;
-    params[@"count"] = @10;
-    
+    long long maxId = 0;
     // 判断是否第一次调用
     if (self.statusFrames.count) {
         WBStatusframe *statusFrame = self.statusFrames.lastObject;
         // 加载ID <= max_id的微博
-        long long maxId = [statusFrame.status.idstr longLongValue] - 1;
-        params[@"max_id"] = @(maxId);
+        maxId = [statusFrame.status.idstr longLongValue] - 1;
     }
     
     // 发送请求
-    [WBHttpTool getWithURL:@"https://api.weibo.com/2/statuses/home_timeline.json" params:params success:^(id json) {
-        //NSLog(@"加载home_timeline成功：%@",responseObject);
-        // 将字典数组转为模型数组
+    [WBStatusTool statusDataWithSinceId:0 maxId:maxId success:^(NSArray *statuses) {
+        //statusFrames添加status数据
         NSMutableArray *statusFrames = [NSMutableArray array];
-        NSArray *statuses = [WBStatus objectArrayWithKeyValuesArray:json[@"statuses"]];
-        
         for (WBStatus *status in statuses) {
             WBStatusframe *statusFrame = [[WBStatusframe alloc]init];
             statusFrame.status = status;
             [statusFrames addObject:statusFrame];
         }
-        
+            
         // 添加旧数据
         [self.statusFrames addObjectsFromArray:statusFrames];
-        
+            
         // 刷新表格
         [self.tableView reloadData];
-        
+                    
         // 让刷新控件停止显示刷新状态
         [self.tableView footerEndRefreshing];
-        
-
     } failure:^(NSError *error) {
         WBLog(@"加载home_timeline失败：%@",error);
         // 让刷新控件停止显示刷新状态
         [self.tableView footerEndRefreshing];
     }];
-    
+
 }
 
 

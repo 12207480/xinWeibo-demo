@@ -112,6 +112,7 @@
 		B0B1C73F19F67F7E00C834E9 /* WBDetailCellframe.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C73E19F67F7E00C834E9 /* WBDetailCellframe.m */; };
 		B0B1C74219F6830400C834E9 /* WBDetailRetweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C74119F6830400C834E9 /* WBDetailRetweetView.m */; };
 		B0B1C74519F6861800C834E9 /* WBDetailTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1C74419F6861800C834E9 /* WBDetailTopView.m */; };
+		B0BCDE2119F7905500B82F49 /* WBUserTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BCDE2019F7905500B82F49 /* WBUserTool.m */; };
 		B0C64F3019E4D72A003B0962 /* WBTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C64F2F19E4D72A003B0962 /* WBTitleButton.m */; };
 		B0D09B0519F0E85400671E7E /* WBComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0419F0E85400671E7E /* WBComposeViewController.m */; };
 		B0D09B0819F0EB3B00671E7E /* WBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0719F0EB3B00671E7E /* WBTextView.m */; };
@@ -336,6 +337,8 @@
 		B0B1C74119F6830400C834E9 /* WBDetailRetweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailRetweetView.m; sourceTree = "<group>"; };
 		B0B1C74319F6861800C834E9 /* WBDetailTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailTopView.h; sourceTree = "<group>"; };
 		B0B1C74419F6861800C834E9 /* WBDetailTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailTopView.m; sourceTree = "<group>"; };
+		B0BCDE1F19F7905500B82F49 /* WBUserTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUserTool.h; sourceTree = "<group>"; };
+		B0BCDE2019F7905500B82F49 /* WBUserTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUserTool.m; sourceTree = "<group>"; };
 		B0C64F2E19E4D72A003B0962 /* WBTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTitleButton.h; sourceTree = "<group>"; };
 		B0C64F2F19E4D72A003B0962 /* WBTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTitleButton.m; sourceTree = "<group>"; };
 		B0D09B0319F0E85400671E7E /* WBComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBComposeViewController.h; sourceTree = "<group>"; };
@@ -988,6 +991,8 @@
 			children = (
 				B0F9B31219F78598009054E2 /* WBStatusTool.h */,
 				B0F9B31319F78598009054E2 /* WBStatusTool.m */,
+				B0BCDE1F19F7905500B82F49 /* WBUserTool.h */,
+				B0BCDE2019F7905500B82F49 /* WBUserTool.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -1156,6 +1161,7 @@
 				B0AA51F519E2E47D0030DDBE /* WBTabBar.m in Sources */,
 				B07D724219E6649500A7F6A6 /* AFURLConnectionOperation.m in Sources */,
 				B07D724419E6649500A7F6A6 /* AFURLResponseSerialization.m in Sources */,
+				B0BCDE2119F7905500B82F49 /* WBUserTool.m in Sources */,
 				B0B1C72F19F658AD00C834E9 /* WBDetailCell.m in Sources */,
 				B0AA7B6419E4479B00B4B194 /* WBSearchBar.m in Sources */,
 				B0D09B0B19F0FFDC00671E7E /* WBComposeToolBar.m in Sources */,

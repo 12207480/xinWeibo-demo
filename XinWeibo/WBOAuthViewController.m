@@ -7,11 +7,9 @@
 //
 
 #import "WBOAuthViewController.h"
-#import "WBAccount.h"
 #import "WBAccountTool.h"
 #import "WBWeiboTool.h"
 #import "MBProgressHUD+MJ.h"
-#import "WBHttpTool.h"
 
 @interface WBOAuthViewController ()<UIWebViewDelegate>
 
@@ -82,30 +80,15 @@
 
 - (void)accessTokenWithCode:(NSString *)code
 {
-    // 封装请求参数
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"client_id"] = WBAppKey;
-    params[@"client_secret"] = WBAppSecret;
-    params[@"grant_type"] = @"authorization_code";
-    params[@"code"] = code;
-    params[@"redirect_uri"] = WBRedirectUrl;
-    
-    // 发生请求
-    [WBHttpTool postWithURL:@"https://api.weibo.com/oauth2/access_token" params:params success:^(id json) {
-        //WBLog(@"accessToken请求成功：%@",json);
-        // 将字典转位模型
-        WBAccount *account = [WBAccount accountWithDic:json];
-        
-        // 归档
-        [WBAccountTool saveAccount:account];
-        
+    // 获取accessToken
+    [WBAccountTool accessTokenWithCode:code success:^{
         // 选择控制器
         [WBWeiboTool chooseRootViewController];
         
         [MBProgressHUD hideHUD];
-
     } failure:^(NSError *error) {
         WBLog(@"accessToken请求失败：%@",error);
+        
         [MBProgressHUD hideHUD];
     }];
     

@@ -15,7 +15,7 @@
 
 @implementation WBStatusTool
 
-+ (void)statusWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
++ (void)statusDataWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
 {
     // 封装参数请求
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
