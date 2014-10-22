@@ -118,6 +118,7 @@
 		B0D09B0B19F0FFDC00671E7E /* WBComposeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0A19F0FFDC00671E7E /* WBComposeToolBar.m */; };
 		B0DB1B7319E2AB66009FD1A5 /* UIImage+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DB1B7219E2AB66009FD1A5 /* UIImage+WB.m */; };
 		B0F2CC4019F6B0BD00296DA3 /* WBDetailHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F2CC3F19F6B0BD00296DA3 /* WBDetailHeader.m */; };
+		B0F9B31419F78598009054E2 /* WBStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9B31319F78598009054E2 /* WBStatusTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +348,8 @@
 		B0DB1B7219E2AB66009FD1A5 /* UIImage+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WB.m"; sourceTree = "<group>"; };
 		B0F2CC3E19F6B0BD00296DA3 /* WBDetailHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailHeader.h; sourceTree = "<group>"; };
 		B0F2CC3F19F6B0BD00296DA3 /* WBDetailHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailHeader.m; sourceTree = "<group>"; };
+		B0F9B31219F78598009054E2 /* WBStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusTool.h; sourceTree = "<group>"; };
+		B0F9B31319F78598009054E2 /* WBStatusTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBStatusTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -756,6 +759,7 @@
 				B08D251619E03ADC00BB2F32 /* Controller */,
 				B0C64F2D19E4D6AC003B0962 /* View */,
 				B07D725F19E6D4FF00A7F6A6 /* Model */,
+				B0F9B31119F7855C009054E2 /* Tool */,
 			);
 			name = "Home(主页)";
 			sourceTree = "<group>";
@@ -979,6 +983,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		B0F9B31119F7855C009054E2 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B0F9B31219F78598009054E2 /* WBStatusTool.h */,
+				B0F9B31319F78598009054E2 /* WBStatusTool.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1119,6 +1132,7 @@
 				B07D72AC19E6DCF800A7F6A6 /* NSData+ImageContentType.m in Sources */,
 				B07D725C19E6928800A7F6A6 /* MBProgressHUD+MJ.m in Sources */,
 				B07D728619E6D7BA00A7F6A6 /* NSObject+MJCoding.m in Sources */,
+				B0F9B31419F78598009054E2 /* WBStatusTool.m in Sources */,
 				B07D728119E6D7BA00A7F6A6 /* MJIvar.m in Sources */,
 				B0AA51FB19E2F69D0030DDBE /* WBTabBarButton.m in Sources */,
 				B08EF99C19F6481100C3C1CC /* WBBaseStatusCell.m in Sources */,

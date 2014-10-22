@@ -13,7 +13,7 @@
 #import "WBStatus.h"
 #import "WBDetailHeader.h"
 
-@interface WBDetailViewController ()
+@interface WBDetailViewController ()<WBDetailHeaderDelegate>
 @property (nonatomic, weak) WBDetailToolBar *toolBar;
 @property (nonatomic, strong) WBDetailCellframe *detailFrame;
 @property (nonatomic, strong) WBDetailHeader *header;
@@ -120,6 +120,7 @@
     if (self.header == nil) {
         self.header = [[WBDetailHeader alloc]init];
         self.header.status = self.status;
+        self.header.delegate = self;
     }
     return self.header;
 }
@@ -128,6 +129,17 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return section ? 44 : 0;
+}
+
+// 实现代理
+- (void)detailHeader:(WBDetailHeader *)header clickedBtnType:(DetailHeaderBtnType)index
+{
+    if (index == kDetailHeaderBtnTypeComment) { // 点击了评论
+        
+        
+    } else if (index == kDetailHeaderBtnTypeRepost) { // 点击了转发
+        
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

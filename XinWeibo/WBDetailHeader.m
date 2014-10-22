@@ -122,6 +122,12 @@
         center.x = button.center.x;
         self.selectedImageView.center = center;
     }];
+    
+    // 通知代理
+    if ([_delegate respondsToSelector:@selector(detailHeader:clickedBtnType:)]) {
+        DetailHeaderBtnType type = (button == _commentBtn ? kDetailHeaderBtnTypeComment : kDetailHeaderBtnTypeRepost);
+        [_delegate detailHeader:self clickedBtnType:type];
+    }
 }
 
 /**
