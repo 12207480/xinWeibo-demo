@@ -143,7 +143,7 @@
 
 - (void)addChildViewControl:(UIViewController *)childVc title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
-    childVc.view.backgroundColor = [UIColor whiteColor];
+    //childVc.view.backgroundColor = [UIColor whiteColor];
     childVc.title = title;
     // childVc.title 效果一样
     //childVc.tabBarItem.title = @"首页";

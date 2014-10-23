@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 tany. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SettingBaseViewController.h"
 
-@interface WBMeTableViewController : UITableViewController
+@interface WBMeTableViewController :SettingBaseViewController
 
 @end

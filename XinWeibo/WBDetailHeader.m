@@ -34,8 +34,8 @@
         
         
         // 添加按钮
-        self.commentBtn = [self buttionWithTitle:@"评论"];
         self.reweetBtn = [self buttionWithTitle:@"转发"];
+        self.commentBtn = [self buttionWithTitle:@"评论"];
         self.attitudeBtn = [self buttionWithTitle:@"赞"];
         [self setupDivider];
         
@@ -122,10 +122,10 @@
         center.x = button.center.x;
         self.selectedImageView.center = center;
     }];
-    
+    DetailHeaderBtnType type = (button == _commentBtn ? kDetailHeaderBtnTypeComment : kDetailHeaderBtnTypeRepost);
+    _currentBtnType = type;
     // 通知代理
     if ([_delegate respondsToSelector:@selector(detailHeader:clickedBtnType:)]) {
-        DetailHeaderBtnType type = (button == _commentBtn ? kDetailHeaderBtnTypeComment : kDetailHeaderBtnTypeRepost);
         [_delegate detailHeader:self clickedBtnType:type];
     }
 }

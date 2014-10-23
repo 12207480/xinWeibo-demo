@@ -22,7 +22,7 @@
 
 /*微博Statuts cell的属性*/
 // 昵称字体
-#define WBStatusNameFont [UIFont systemFontOfSize:15]
+#define WBStatusNameFont [UIFont systemFontOfSize:13]
 // 时间字体
 #define WBStatusTimeFont [UIFont systemFontOfSize:12]
 // 来源字体

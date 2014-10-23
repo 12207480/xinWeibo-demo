@@ -113,7 +113,7 @@
     }
     
     // 发送请求
-    [WBStatusTool statusDataWithSinceId:sinceId maxId:0 success:^(NSArray *statuses) {
+    [WBStatusTool statusesDataWithSinceId:sinceId maxId:0 success:^(NSArray *statuses) {
         //statusFrames添加status数据
         NSMutableArray *statusFrames = [NSMutableArray array];
         for (WBStatus *status in statuses) {
@@ -157,7 +157,7 @@
     }
     
     // 发送请求
-    [WBStatusTool statusDataWithSinceId:0 maxId:maxId success:^(NSArray *statuses) {
+    [WBStatusTool statusesDataWithSinceId:0 maxId:maxId success:^(NSArray *statuses) {
         //statusFrames添加status数据
         NSMutableArray *statusFrames = [NSMutableArray array];
         for (WBStatus *status in statuses) {

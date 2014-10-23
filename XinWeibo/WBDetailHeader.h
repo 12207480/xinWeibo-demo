@@ -24,4 +24,6 @@ typedef enum : NSUInteger {
 @interface WBDetailHeader :UIImageView
 @property (nonatomic, strong) WBStatus *status;
 @property (nonatomic, weak) id<WBDetailHeaderDelegate> delegate;
+
+@property (nonatomic, assign, readonly) DetailHeaderBtnType currentBtnType;
 @end

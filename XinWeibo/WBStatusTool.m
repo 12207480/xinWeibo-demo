@@ -16,7 +16,7 @@
 
 @implementation WBStatusTool
 
-+ (void)statusDataWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
++ (void)statusesDataWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
 {
     // 封装参数请求
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
@@ -37,6 +37,25 @@
     }];
     
     
+}
+
++ (void)statusDataWithId:(long long)statusId success:(void (^)(WBStatus *))success failure:(void (^)(NSError *))failure
+{
+    // 封装参数请求
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = [WBAccountTool account].access_token;
+     params[@"id"] = @(statusId);
+    
+    // 发送请求
+    [WBHttpTool getWithURL:@"https://api.weibo.com/2/statuses/show.json" params:params success:^(id json) {
+        if(success) {
+            WBStatus *status = [WBStatus objectWithKeyValues:json];
+            success(status);
+        }
+    } failure:^(NSError *error) {
+        if(failure)
+            failure(error);
+    }];
 }
 
 + (void)commentsDataWithSinceId:(long long)sinceId maxId:(long long)maxId statusId:(long long)statusId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
@@ -62,7 +81,7 @@
 
 }
 
-+ (void)reportsDataWithSinceId:(long long)sinceId maxId:(long long)maxId statusId:(long long)statusId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
++ (void)repostsDataWithSinceId:(long long)sinceId maxId:(long long)maxId statusId:(long long)statusId success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
 {
     // 封装参数请求
     NSMutableDictionary *params = [NSMutableDictionary dictionary];

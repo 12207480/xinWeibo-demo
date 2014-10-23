@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class WBStatus;
 @interface WBStatusTool : NSObject
 /**
  *  获取微博数据
@@ -17,7 +18,16 @@
  *  @param success 请求成功后的回调，传回status数组
  *  @param failure 请求失败后的回调
  */
-+ (void)statusDataWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *statuses))success failure:(void(^)(NSError *error))failure;
++ (void)statusesDataWithSinceId:(long long)sinceId maxId:(long long)maxId success:(void (^)(NSArray *statuses))success failure:(void(^)(NSError *error))failure;
+
+/**
+ *  获取某一条微博数据
+ *
+ *  @param statusId 返回该ID的微博
+ *  @param success 请求成功后的回调，传回status
+ *  @param failure 请求失败后的回调
+ */
++ (void)statusDataWithId:(long long)statusId success:(void (^)(WBStatus *status))success failure:(void(^)(NSError *error))failure;
 
 /**
  *  获取某条微博评论
@@ -39,5 +49,5 @@
  *  @param success 请求成功后的回调，传回reports数组
  *  @param failure 请求失败后的回调
  */
-+ (void)reportsDataWithSinceId:(long long)sinceId maxId:(long long)maxId statusId:(long long)statusId success:(void (^)(NSArray *reports))success failure:(void(^)(NSError *error))failure;
++ (void)repostsDataWithSinceId:(long long)sinceId maxId:(long long)maxId statusId:(long long)statusId success:(void (^)(NSArray *reports))success failure:(void(^)(NSError *error))failure;
 @end
