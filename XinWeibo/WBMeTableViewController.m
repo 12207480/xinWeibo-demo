@@ -28,7 +28,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStyleDone target:nil action:nil];
-    self.groupSpace = 22;
+    self.groupSpace = 16;
     NSLog(@"backgroundColor:%@",self.tableView.backgroundColor);
     // 第一组
     SettingItem *myFriend = [SettingArrowItem itemWithIcon:@"new_friend" title:@"我的好友" destVcClass:[WBTestViewController class]];

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 tany. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RETableViewManager.h"
 
 @interface WBMsgTableViewController : UITableViewController
 

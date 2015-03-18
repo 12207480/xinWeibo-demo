@@ -9,9 +9,9 @@
 #define is4Inch ([UIScreen mainScreen].bounds.size.height == 568)
 
 /*授权 账号相关*/
-#define WBAppKey        @"744240563"
-#define WBAppSecret     @"bbebd91e9be26bc53ed66cd071f9e842"
-#define WBRedirectUrl   @"http://www.baidu.com"
+#define WBAppKey        @"568898243"
+#define WBAppSecret     @"38a4f8204cc784f81f9f0daaf31e02e3"
+#define WBRedirectUrl   @"http://www.sharesdk.cn"
 
 // 自定义Log
 #ifdef DEBUG

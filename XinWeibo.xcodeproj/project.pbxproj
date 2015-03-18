@@ -7,6 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B02666B419F8FFDD00F22709 /* RETableViewBoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026666D19F8FFDD00F22709 /* RETableViewBoolCell.m */; };
+		B02666B519F8FFDD00F22709 /* RETableViewCreditCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026666F19F8FFDD00F22709 /* RETableViewCreditCardCell.m */; };
+		B02666B619F8FFDD00F22709 /* RETableViewDateTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667119F8FFDD00F22709 /* RETableViewDateTimeCell.m */; };
+		B02666B719F8FFDD00F22709 /* RETableViewFloatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667319F8FFDD00F22709 /* RETableViewFloatCell.m */; };
+		B02666B819F8FFDD00F22709 /* RETableViewInlineDatePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667519F8FFDD00F22709 /* RETableViewInlineDatePickerCell.m */; };
+		B02666B919F8FFDD00F22709 /* RETableViewInlinePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667719F8FFDD00F22709 /* RETableViewInlinePickerCell.m */; };
+		B02666BA19F8FFDD00F22709 /* RETableViewLongTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667919F8FFDD00F22709 /* RETableViewLongTextCell.m */; };
+		B02666BB19F8FFDD00F22709 /* RETableViewNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667B19F8FFDD00F22709 /* RETableViewNumberCell.m */; };
+		B02666BC19F8FFDD00F22709 /* RETableViewOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667D19F8FFDD00F22709 /* RETableViewOptionCell.m */; };
+		B02666BD19F8FFDD00F22709 /* RETableViewPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026667F19F8FFDD00F22709 /* RETableViewPickerCell.m */; };
+		B02666BE19F8FFDD00F22709 /* RETableViewSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026668119F8FFDD00F22709 /* RETableViewSegmentedCell.m */; };
+		B02666BF19F8FFDD00F22709 /* RETableViewTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B026668319F8FFDD00F22709 /* RETableViewTextCell.m */; };
+		B02666C019F8FFDD00F22709 /* REBoolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026668619F8FFDD00F22709 /* REBoolItem.m */; };
+		B02666C119F8FFDD00F22709 /* RECreditCardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026668819F8FFDD00F22709 /* RECreditCardItem.m */; };
+		B02666C219F8FFDD00F22709 /* REDateTimeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026668A19F8FFDD00F22709 /* REDateTimeItem.m */; };
+		B02666C319F8FFDD00F22709 /* REFloatItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026668C19F8FFDD00F22709 /* REFloatItem.m */; };
+		B02666C419F8FFDD00F22709 /* REInlineDatePickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026668E19F8FFDD00F22709 /* REInlineDatePickerItem.m */; };
+		B02666C519F8FFDD00F22709 /* REInlinePickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669019F8FFDD00F22709 /* REInlinePickerItem.m */; };
+		B02666C619F8FFDD00F22709 /* RELongTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669219F8FFDD00F22709 /* RELongTextItem.m */; };
+		B02666C719F8FFDD00F22709 /* REMultipleChoiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669419F8FFDD00F22709 /* REMultipleChoiceItem.m */; };
+		B02666C819F8FFDD00F22709 /* RENumberItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669619F8FFDD00F22709 /* RENumberItem.m */; };
+		B02666C919F8FFDD00F22709 /* REPickerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669819F8FFDD00F22709 /* REPickerItem.m */; };
+		B02666CA19F8FFDD00F22709 /* RERadioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669A19F8FFDD00F22709 /* RERadioItem.m */; };
+		B02666CB19F8FFDD00F22709 /* RESegmentedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669C19F8FFDD00F22709 /* RESegmentedItem.m */; };
+		B02666CC19F8FFDD00F22709 /* RETextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B026669E19F8FFDD00F22709 /* RETextItem.m */; };
+		B02666CD19F8FFDD00F22709 /* NSString+RETableViewManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666A019F8FFDD00F22709 /* NSString+RETableViewManagerAdditions.m */; };
+		B02666CE19F8FFDD00F22709 /* REActionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666A219F8FFDD00F22709 /* REActionBar.m */; };
+		B02666CF19F8FFDD00F22709 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666A419F8FFDD00F22709 /* RECommonFunctions.m */; };
+		B02666D019F8FFDD00F22709 /* REPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666A619F8FFDD00F22709 /* REPlaceholderTextView.m */; };
+		B02666D119F8FFDD00F22709 /* RETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666A819F8FFDD00F22709 /* RETableViewCell.m */; };
+		B02666D219F8FFDD00F22709 /* RETableViewCellStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666AA19F8FFDD00F22709 /* RETableViewCellStyle.m */; };
+		B02666D319F8FFDD00F22709 /* RETableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666AC19F8FFDD00F22709 /* RETableViewItem.m */; };
+		B02666D419F8FFDD00F22709 /* RETableViewManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B02666AD19F8FFDD00F22709 /* RETableViewManager.bundle */; };
+		B02666D519F8FFDD00F22709 /* RETableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666AF19F8FFDD00F22709 /* RETableViewManager.m */; };
+		B02666D619F8FFDD00F22709 /* RETableViewOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666B119F8FFDD00F22709 /* RETableViewOptionsController.m */; };
+		B02666D719F8FFDD00F22709 /* RETableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666B319F8FFDD00F22709 /* RETableViewSection.m */; };
+		B02666E819F9015C00F22709 /* NSError+REValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666DA19F9015C00F22709 /* NSError+REValidation.m */; };
+		B02666E919F9015C00F22709 /* REValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666DC19F9015C00F22709 /* REValidation.m */; };
+		B02666EA19F9015C00F22709 /* REValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666DE19F9015C00F22709 /* REValidator.m */; };
+		B02666EB19F9015C00F22709 /* REEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666E119F9015C00F22709 /* REEmailValidator.m */; };
+		B02666EC19F9015C00F22709 /* RELengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666E319F9015C00F22709 /* RELengthValidator.m */; };
+		B02666ED19F9015C00F22709 /* REPresenceValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666E519F9015C00F22709 /* REPresenceValidator.m */; };
+		B02666EE19F9015C00F22709 /* REURLValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666E719F9015C00F22709 /* REURLValidator.m */; };
+		B02666F419F9019400F22709 /* NSString+RENumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666F119F9019400F22709 /* NSString+RENumberFormat.m */; };
+		B02666F519F9019400F22709 /* REFormattedNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666F319F9019400F22709 /* REFormattedNumberField.m */; };
+		B02666F919F905E600F22709 /* WBADImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666F819F905E600F22709 /* WBADImageItem.m */; };
+		B02666FC19F906E300F22709 /* WBADImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B02666FB19F906E300F22709 /* WBADImageCell.m */; };
 		B045834E19EE3D4200C21597 /* WBPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B045834D19EE3D4200C21597 /* WBPhotoView.m */; };
 		B045835119EE400600C21597 /* WBPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = B045835019EE400600C21597 /* WBPhotosView.m */; };
 		B045836219EE549B00C21597 /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = B045835419EE549B00C21597 /* MJPhoto.m */; };
@@ -132,6 +179,11 @@
 		B0D09B0819F0EB3B00671E7E /* WBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0719F0EB3B00671E7E /* WBTextView.m */; };
 		B0D09B0B19F0FFDC00671E7E /* WBComposeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D09B0A19F0FFDC00671E7E /* WBComposeToolBar.m */; };
 		B0DB1B7319E2AB66009FD1A5 /* UIImage+WB.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DB1B7219E2AB66009FD1A5 /* UIImage+WB.m */; };
+		B0E7D10719F9150A006B6EAD /* WBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D10619F9150A006B6EAD /* WBButton.m */; };
+		B0E7D10A19F91935006B6EAD /* WBHotTopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D10919F91935006B6EAD /* WBHotTopItem.m */; };
+		B0E7D10D19F91C51006B6EAD /* WBHotTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D10C19F91C51006B6EAD /* WBHotTopCell.m */; };
+		B0E7D11319F93C9D006B6EAD /* WBSubtitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D11219F93C9D006B6EAD /* WBSubtitleCell.m */; };
+		B0E7D11619F93CBB006B6EAD /* WBSubtitleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B0E7D11519F93CBB006B6EAD /* WBSubtitleItem.m */; };
 		B0F2CC4019F6B0BD00296DA3 /* WBDetailHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F2CC3F19F6B0BD00296DA3 /* WBDetailHeader.m */; };
 		B0F9B31419F78598009054E2 /* WBStatusTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F9B31319F78598009054E2 /* WBStatusTool.m */; };
 /* End PBXBuildFile section */
@@ -147,6 +199,99 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B026666C19F8FFDD00F22709 /* RETableViewBoolCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewBoolCell.h; sourceTree = "<group>"; };
+		B026666D19F8FFDD00F22709 /* RETableViewBoolCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewBoolCell.m; sourceTree = "<group>"; };
+		B026666E19F8FFDD00F22709 /* RETableViewCreditCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewCreditCardCell.h; sourceTree = "<group>"; };
+		B026666F19F8FFDD00F22709 /* RETableViewCreditCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewCreditCardCell.m; sourceTree = "<group>"; };
+		B026667019F8FFDD00F22709 /* RETableViewDateTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewDateTimeCell.h; sourceTree = "<group>"; };
+		B026667119F8FFDD00F22709 /* RETableViewDateTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewDateTimeCell.m; sourceTree = "<group>"; };
+		B026667219F8FFDD00F22709 /* RETableViewFloatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewFloatCell.h; sourceTree = "<group>"; };
+		B026667319F8FFDD00F22709 /* RETableViewFloatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewFloatCell.m; sourceTree = "<group>"; };
+		B026667419F8FFDD00F22709 /* RETableViewInlineDatePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewInlineDatePickerCell.h; sourceTree = "<group>"; };
+		B026667519F8FFDD00F22709 /* RETableViewInlineDatePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewInlineDatePickerCell.m; sourceTree = "<group>"; };
+		B026667619F8FFDD00F22709 /* RETableViewInlinePickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewInlinePickerCell.h; sourceTree = "<group>"; };
+		B026667719F8FFDD00F22709 /* RETableViewInlinePickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewInlinePickerCell.m; sourceTree = "<group>"; };
+		B026667819F8FFDD00F22709 /* RETableViewLongTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewLongTextCell.h; sourceTree = "<group>"; };
+		B026667919F8FFDD00F22709 /* RETableViewLongTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewLongTextCell.m; sourceTree = "<group>"; };
+		B026667A19F8FFDD00F22709 /* RETableViewNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewNumberCell.h; sourceTree = "<group>"; };
+		B026667B19F8FFDD00F22709 /* RETableViewNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewNumberCell.m; sourceTree = "<group>"; };
+		B026667C19F8FFDD00F22709 /* RETableViewOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewOptionCell.h; sourceTree = "<group>"; };
+		B026667D19F8FFDD00F22709 /* RETableViewOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewOptionCell.m; sourceTree = "<group>"; };
+		B026667E19F8FFDD00F22709 /* RETableViewPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewPickerCell.h; sourceTree = "<group>"; };
+		B026667F19F8FFDD00F22709 /* RETableViewPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewPickerCell.m; sourceTree = "<group>"; };
+		B026668019F8FFDD00F22709 /* RETableViewSegmentedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewSegmentedCell.h; sourceTree = "<group>"; };
+		B026668119F8FFDD00F22709 /* RETableViewSegmentedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewSegmentedCell.m; sourceTree = "<group>"; };
+		B026668219F8FFDD00F22709 /* RETableViewTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewTextCell.h; sourceTree = "<group>"; };
+		B026668319F8FFDD00F22709 /* RETableViewTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewTextCell.m; sourceTree = "<group>"; };
+		B026668519F8FFDD00F22709 /* REBoolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REBoolItem.h; sourceTree = "<group>"; };
+		B026668619F8FFDD00F22709 /* REBoolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REBoolItem.m; sourceTree = "<group>"; };
+		B026668719F8FFDD00F22709 /* RECreditCardItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECreditCardItem.h; sourceTree = "<group>"; };
+		B026668819F8FFDD00F22709 /* RECreditCardItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECreditCardItem.m; sourceTree = "<group>"; };
+		B026668919F8FFDD00F22709 /* REDateTimeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REDateTimeItem.h; sourceTree = "<group>"; };
+		B026668A19F8FFDD00F22709 /* REDateTimeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REDateTimeItem.m; sourceTree = "<group>"; };
+		B026668B19F8FFDD00F22709 /* REFloatItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFloatItem.h; sourceTree = "<group>"; };
+		B026668C19F8FFDD00F22709 /* REFloatItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFloatItem.m; sourceTree = "<group>"; };
+		B026668D19F8FFDD00F22709 /* REInlineDatePickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REInlineDatePickerItem.h; sourceTree = "<group>"; };
+		B026668E19F8FFDD00F22709 /* REInlineDatePickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REInlineDatePickerItem.m; sourceTree = "<group>"; };
+		B026668F19F8FFDD00F22709 /* REInlinePickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REInlinePickerItem.h; sourceTree = "<group>"; };
+		B026669019F8FFDD00F22709 /* REInlinePickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REInlinePickerItem.m; sourceTree = "<group>"; };
+		B026669119F8FFDD00F22709 /* RELongTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELongTextItem.h; sourceTree = "<group>"; };
+		B026669219F8FFDD00F22709 /* RELongTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELongTextItem.m; sourceTree = "<group>"; };
+		B026669319F8FFDD00F22709 /* REMultipleChoiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REMultipleChoiceItem.h; sourceTree = "<group>"; };
+		B026669419F8FFDD00F22709 /* REMultipleChoiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REMultipleChoiceItem.m; sourceTree = "<group>"; };
+		B026669519F8FFDD00F22709 /* RENumberItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RENumberItem.h; sourceTree = "<group>"; };
+		B026669619F8FFDD00F22709 /* RENumberItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RENumberItem.m; sourceTree = "<group>"; };
+		B026669719F8FFDD00F22709 /* REPickerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPickerItem.h; sourceTree = "<group>"; };
+		B026669819F8FFDD00F22709 /* REPickerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPickerItem.m; sourceTree = "<group>"; };
+		B026669919F8FFDD00F22709 /* RERadioItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RERadioItem.h; sourceTree = "<group>"; };
+		B026669A19F8FFDD00F22709 /* RERadioItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RERadioItem.m; sourceTree = "<group>"; };
+		B026669B19F8FFDD00F22709 /* RESegmentedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESegmentedItem.h; sourceTree = "<group>"; };
+		B026669C19F8FFDD00F22709 /* RESegmentedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESegmentedItem.m; sourceTree = "<group>"; };
+		B026669D19F8FFDD00F22709 /* RETextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETextItem.h; sourceTree = "<group>"; };
+		B026669E19F8FFDD00F22709 /* RETextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETextItem.m; sourceTree = "<group>"; };
+		B026669F19F8FFDD00F22709 /* NSString+RETableViewManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RETableViewManagerAdditions.h"; sourceTree = "<group>"; };
+		B02666A019F8FFDD00F22709 /* NSString+RETableViewManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RETableViewManagerAdditions.m"; sourceTree = "<group>"; };
+		B02666A119F8FFDD00F22709 /* REActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REActionBar.h; sourceTree = "<group>"; };
+		B02666A219F8FFDD00F22709 /* REActionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REActionBar.m; sourceTree = "<group>"; };
+		B02666A319F8FFDD00F22709 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		B02666A419F8FFDD00F22709 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		B02666A519F8FFDD00F22709 /* REPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPlaceholderTextView.h; sourceTree = "<group>"; };
+		B02666A619F8FFDD00F22709 /* REPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPlaceholderTextView.m; sourceTree = "<group>"; };
+		B02666A719F8FFDD00F22709 /* RETableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewCell.h; sourceTree = "<group>"; };
+		B02666A819F8FFDD00F22709 /* RETableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewCell.m; sourceTree = "<group>"; };
+		B02666A919F8FFDD00F22709 /* RETableViewCellStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewCellStyle.h; sourceTree = "<group>"; };
+		B02666AA19F8FFDD00F22709 /* RETableViewCellStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewCellStyle.m; sourceTree = "<group>"; };
+		B02666AB19F8FFDD00F22709 /* RETableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewItem.h; sourceTree = "<group>"; };
+		B02666AC19F8FFDD00F22709 /* RETableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewItem.m; sourceTree = "<group>"; };
+		B02666AD19F8FFDD00F22709 /* RETableViewManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RETableViewManager.bundle; sourceTree = "<group>"; };
+		B02666AE19F8FFDD00F22709 /* RETableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewManager.h; sourceTree = "<group>"; };
+		B02666AF19F8FFDD00F22709 /* RETableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewManager.m; sourceTree = "<group>"; };
+		B02666B019F8FFDD00F22709 /* RETableViewOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewOptionsController.h; sourceTree = "<group>"; };
+		B02666B119F8FFDD00F22709 /* RETableViewOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewOptionsController.m; sourceTree = "<group>"; };
+		B02666B219F8FFDD00F22709 /* RETableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RETableViewSection.h; sourceTree = "<group>"; };
+		B02666B319F8FFDD00F22709 /* RETableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RETableViewSection.m; sourceTree = "<group>"; };
+		B02666D919F9015C00F22709 /* NSError+REValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+REValidation.h"; sourceTree = "<group>"; };
+		B02666DA19F9015C00F22709 /* NSError+REValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+REValidation.m"; sourceTree = "<group>"; };
+		B02666DB19F9015C00F22709 /* REValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REValidation.h; sourceTree = "<group>"; };
+		B02666DC19F9015C00F22709 /* REValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REValidation.m; sourceTree = "<group>"; };
+		B02666DD19F9015C00F22709 /* REValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REValidator.h; sourceTree = "<group>"; };
+		B02666DE19F9015C00F22709 /* REValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REValidator.m; sourceTree = "<group>"; };
+		B02666E019F9015C00F22709 /* REEmailValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REEmailValidator.h; sourceTree = "<group>"; };
+		B02666E119F9015C00F22709 /* REEmailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REEmailValidator.m; sourceTree = "<group>"; };
+		B02666E219F9015C00F22709 /* RELengthValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELengthValidator.h; sourceTree = "<group>"; };
+		B02666E319F9015C00F22709 /* RELengthValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELengthValidator.m; sourceTree = "<group>"; };
+		B02666E419F9015C00F22709 /* REPresenceValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REPresenceValidator.h; sourceTree = "<group>"; };
+		B02666E519F9015C00F22709 /* REPresenceValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPresenceValidator.m; sourceTree = "<group>"; };
+		B02666E619F9015C00F22709 /* REURLValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REURLValidator.h; sourceTree = "<group>"; };
+		B02666E719F9015C00F22709 /* REURLValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REURLValidator.m; sourceTree = "<group>"; };
+		B02666F019F9019400F22709 /* NSString+RENumberFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RENumberFormat.h"; sourceTree = "<group>"; };
+		B02666F119F9019400F22709 /* NSString+RENumberFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RENumberFormat.m"; sourceTree = "<group>"; };
+		B02666F219F9019400F22709 /* REFormattedNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFormattedNumberField.h; sourceTree = "<group>"; };
+		B02666F319F9019400F22709 /* REFormattedNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFormattedNumberField.m; sourceTree = "<group>"; };
+		B02666F719F905E600F22709 /* WBADImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBADImageItem.h; sourceTree = "<group>"; };
+		B02666F819F905E600F22709 /* WBADImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBADImageItem.m; sourceTree = "<group>"; };
+		B02666FA19F906E300F22709 /* WBADImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBADImageCell.h; sourceTree = "<group>"; };
+		B02666FB19F906E300F22709 /* WBADImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBADImageCell.m; sourceTree = "<group>"; };
 		B045834C19EE3D4200C21597 /* WBPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoView.h; sourceTree = "<group>"; };
 		B045834D19EE3D4200C21597 /* WBPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoView.m; sourceTree = "<group>"; };
 		B045834F19EE400600C21597 /* WBPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotosView.h; sourceTree = "<group>"; };
@@ -391,6 +536,16 @@
 		B0D09B0A19F0FFDC00671E7E /* WBComposeToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBComposeToolBar.m; sourceTree = "<group>"; };
 		B0DB1B7119E2AB66009FD1A5 /* UIImage+WB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WB.h"; sourceTree = "<group>"; };
 		B0DB1B7219E2AB66009FD1A5 /* UIImage+WB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WB.m"; sourceTree = "<group>"; };
+		B0E7D10519F9150A006B6EAD /* WBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBButton.h; sourceTree = "<group>"; };
+		B0E7D10619F9150A006B6EAD /* WBButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBButton.m; sourceTree = "<group>"; };
+		B0E7D10819F91935006B6EAD /* WBHotTopItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHotTopItem.h; sourceTree = "<group>"; };
+		B0E7D10919F91935006B6EAD /* WBHotTopItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHotTopItem.m; sourceTree = "<group>"; };
+		B0E7D10B19F91C51006B6EAD /* WBHotTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHotTopCell.h; sourceTree = "<group>"; };
+		B0E7D10C19F91C51006B6EAD /* WBHotTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBHotTopCell.m; sourceTree = "<group>"; };
+		B0E7D11119F93C9D006B6EAD /* WBSubtitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSubtitleCell.h; sourceTree = "<group>"; };
+		B0E7D11219F93C9D006B6EAD /* WBSubtitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSubtitleCell.m; sourceTree = "<group>"; };
+		B0E7D11419F93CBB006B6EAD /* WBSubtitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSubtitleItem.h; sourceTree = "<group>"; };
+		B0E7D11519F93CBB006B6EAD /* WBSubtitleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSubtitleItem.m; sourceTree = "<group>"; };
 		B0F2CC3E19F6B0BD00296DA3 /* WBDetailHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDetailHeader.h; sourceTree = "<group>"; };
 		B0F2CC3F19F6B0BD00296DA3 /* WBDetailHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDetailHeader.m; sourceTree = "<group>"; };
 		B0F9B31219F78598009054E2 /* WBStatusTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBStatusTool.h; sourceTree = "<group>"; };
@@ -421,6 +576,153 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B026666A19F8FFDD00F22709 /* RETableViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				B026666B19F8FFDD00F22709 /* Cells */,
+				B026668419F8FFDD00F22709 /* Items */,
+				B026669F19F8FFDD00F22709 /* NSString+RETableViewManagerAdditions.h */,
+				B02666A019F8FFDD00F22709 /* NSString+RETableViewManagerAdditions.m */,
+				B02666A119F8FFDD00F22709 /* REActionBar.h */,
+				B02666A219F8FFDD00F22709 /* REActionBar.m */,
+				B02666A319F8FFDD00F22709 /* RECommonFunctions.h */,
+				B02666A419F8FFDD00F22709 /* RECommonFunctions.m */,
+				B02666A519F8FFDD00F22709 /* REPlaceholderTextView.h */,
+				B02666A619F8FFDD00F22709 /* REPlaceholderTextView.m */,
+				B02666A719F8FFDD00F22709 /* RETableViewCell.h */,
+				B02666A819F8FFDD00F22709 /* RETableViewCell.m */,
+				B02666A919F8FFDD00F22709 /* RETableViewCellStyle.h */,
+				B02666AA19F8FFDD00F22709 /* RETableViewCellStyle.m */,
+				B02666AB19F8FFDD00F22709 /* RETableViewItem.h */,
+				B02666AC19F8FFDD00F22709 /* RETableViewItem.m */,
+				B02666AD19F8FFDD00F22709 /* RETableViewManager.bundle */,
+				B02666AE19F8FFDD00F22709 /* RETableViewManager.h */,
+				B02666AF19F8FFDD00F22709 /* RETableViewManager.m */,
+				B02666B019F8FFDD00F22709 /* RETableViewOptionsController.h */,
+				B02666B119F8FFDD00F22709 /* RETableViewOptionsController.m */,
+				B02666B219F8FFDD00F22709 /* RETableViewSection.h */,
+				B02666B319F8FFDD00F22709 /* RETableViewSection.m */,
+			);
+			path = RETableViewManager;
+			sourceTree = "<group>";
+		};
+		B026666B19F8FFDD00F22709 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B026666C19F8FFDD00F22709 /* RETableViewBoolCell.h */,
+				B026666D19F8FFDD00F22709 /* RETableViewBoolCell.m */,
+				B026666E19F8FFDD00F22709 /* RETableViewCreditCardCell.h */,
+				B026666F19F8FFDD00F22709 /* RETableViewCreditCardCell.m */,
+				B026667019F8FFDD00F22709 /* RETableViewDateTimeCell.h */,
+				B026667119F8FFDD00F22709 /* RETableViewDateTimeCell.m */,
+				B026667219F8FFDD00F22709 /* RETableViewFloatCell.h */,
+				B026667319F8FFDD00F22709 /* RETableViewFloatCell.m */,
+				B026667419F8FFDD00F22709 /* RETableViewInlineDatePickerCell.h */,
+				B026667519F8FFDD00F22709 /* RETableViewInlineDatePickerCell.m */,
+				B026667619F8FFDD00F22709 /* RETableViewInlinePickerCell.h */,
+				B026667719F8FFDD00F22709 /* RETableViewInlinePickerCell.m */,
+				B026667819F8FFDD00F22709 /* RETableViewLongTextCell.h */,
+				B026667919F8FFDD00F22709 /* RETableViewLongTextCell.m */,
+				B026667A19F8FFDD00F22709 /* RETableViewNumberCell.h */,
+				B026667B19F8FFDD00F22709 /* RETableViewNumberCell.m */,
+				B026667C19F8FFDD00F22709 /* RETableViewOptionCell.h */,
+				B026667D19F8FFDD00F22709 /* RETableViewOptionCell.m */,
+				B026667E19F8FFDD00F22709 /* RETableViewPickerCell.h */,
+				B026667F19F8FFDD00F22709 /* RETableViewPickerCell.m */,
+				B026668019F8FFDD00F22709 /* RETableViewSegmentedCell.h */,
+				B026668119F8FFDD00F22709 /* RETableViewSegmentedCell.m */,
+				B026668219F8FFDD00F22709 /* RETableViewTextCell.h */,
+				B026668319F8FFDD00F22709 /* RETableViewTextCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B026668419F8FFDD00F22709 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				B026668519F8FFDD00F22709 /* REBoolItem.h */,
+				B026668619F8FFDD00F22709 /* REBoolItem.m */,
+				B026668719F8FFDD00F22709 /* RECreditCardItem.h */,
+				B026668819F8FFDD00F22709 /* RECreditCardItem.m */,
+				B026668919F8FFDD00F22709 /* REDateTimeItem.h */,
+				B026668A19F8FFDD00F22709 /* REDateTimeItem.m */,
+				B026668B19F8FFDD00F22709 /* REFloatItem.h */,
+				B026668C19F8FFDD00F22709 /* REFloatItem.m */,
+				B026668D19F8FFDD00F22709 /* REInlineDatePickerItem.h */,
+				B026668E19F8FFDD00F22709 /* REInlineDatePickerItem.m */,
+				B026668F19F8FFDD00F22709 /* REInlinePickerItem.h */,
+				B026669019F8FFDD00F22709 /* REInlinePickerItem.m */,
+				B026669119F8FFDD00F22709 /* RELongTextItem.h */,
+				B026669219F8FFDD00F22709 /* RELongTextItem.m */,
+				B026669319F8FFDD00F22709 /* REMultipleChoiceItem.h */,
+				B026669419F8FFDD00F22709 /* REMultipleChoiceItem.m */,
+				B026669519F8FFDD00F22709 /* RENumberItem.h */,
+				B026669619F8FFDD00F22709 /* RENumberItem.m */,
+				B026669719F8FFDD00F22709 /* REPickerItem.h */,
+				B026669819F8FFDD00F22709 /* REPickerItem.m */,
+				B026669919F8FFDD00F22709 /* RERadioItem.h */,
+				B026669A19F8FFDD00F22709 /* RERadioItem.m */,
+				B026669B19F8FFDD00F22709 /* RESegmentedItem.h */,
+				B026669C19F8FFDD00F22709 /* RESegmentedItem.m */,
+				B026669D19F8FFDD00F22709 /* RETextItem.h */,
+				B026669E19F8FFDD00F22709 /* RETextItem.m */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		B02666D819F9015C00F22709 /* REValidation */ = {
+			isa = PBXGroup;
+			children = (
+				B02666D919F9015C00F22709 /* NSError+REValidation.h */,
+				B02666DA19F9015C00F22709 /* NSError+REValidation.m */,
+				B02666DB19F9015C00F22709 /* REValidation.h */,
+				B02666DC19F9015C00F22709 /* REValidation.m */,
+				B02666DD19F9015C00F22709 /* REValidator.h */,
+				B02666DE19F9015C00F22709 /* REValidator.m */,
+				B02666DF19F9015C00F22709 /* Validators */,
+			);
+			path = REValidation;
+			sourceTree = "<group>";
+		};
+		B02666DF19F9015C00F22709 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				B02666E019F9015C00F22709 /* REEmailValidator.h */,
+				B02666E119F9015C00F22709 /* REEmailValidator.m */,
+				B02666E219F9015C00F22709 /* RELengthValidator.h */,
+				B02666E319F9015C00F22709 /* RELengthValidator.m */,
+				B02666E419F9015C00F22709 /* REPresenceValidator.h */,
+				B02666E519F9015C00F22709 /* REPresenceValidator.m */,
+				B02666E619F9015C00F22709 /* REURLValidator.h */,
+				B02666E719F9015C00F22709 /* REURLValidator.m */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		B02666EF19F9019400F22709 /* REFormattedNumberField */ = {
+			isa = PBXGroup;
+			children = (
+				B02666F019F9019400F22709 /* NSString+RENumberFormat.h */,
+				B02666F119F9019400F22709 /* NSString+RENumberFormat.m */,
+				B02666F219F9019400F22709 /* REFormattedNumberField.h */,
+				B02666F319F9019400F22709 /* REFormattedNumberField.m */,
+			);
+			path = REFormattedNumberField;
+			sourceTree = "<group>";
+		};
+		B02666F619F9051400F22709 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B02666F719F905E600F22709 /* WBADImageItem.h */,
+				B02666F819F905E600F22709 /* WBADImageItem.m */,
+				B0E7D10819F91935006B6EAD /* WBHotTopItem.h */,
+				B0E7D10919F91935006B6EAD /* WBHotTopItem.m */,
+				B0E7D11419F93CBB006B6EAD /* WBSubtitleItem.h */,
+				B0E7D11519F93CBB006B6EAD /* WBSubtitleItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		B045835219EE549B00C21597 /* MJPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -600,6 +902,9 @@
 		B07D724619E6649A00A7F6A6 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				B02666EF19F9019400F22709 /* REFormattedNumberField */,
+				B02666D819F9015C00F22709 /* REValidation */,
+				B026666A19F8FFDD00F22709 /* RETableViewManager */,
 				B0A7816919EEC1210051FEC4 /* MJRefresh */,
 				B045835219EE549B00C21597 /* MJPhotoBrowser */,
 				B07D728919E6DCF800A7F6A6 /* SDWebImage */,
@@ -858,6 +1163,7 @@
 			children = (
 				B08D251819E03AFA00BB2F32 /* Controller */,
 				B0AA7B6119E4477200B4B194 /* View */,
+				B02666F619F9051400F22709 /* Model */,
 			);
 			name = "Discover(广场)";
 			sourceTree = "<group>";
@@ -962,6 +1268,14 @@
 			children = (
 				B0AA7B6219E4479B00B4B194 /* WBSearchBar.h */,
 				B0AA7B6319E4479B00B4B194 /* WBSearchBar.m */,
+				B02666FA19F906E300F22709 /* WBADImageCell.h */,
+				B02666FB19F906E300F22709 /* WBADImageCell.m */,
+				B0E7D10519F9150A006B6EAD /* WBButton.h */,
+				B0E7D10619F9150A006B6EAD /* WBButton.m */,
+				B0E7D10B19F91C51006B6EAD /* WBHotTopCell.h */,
+				B0E7D10C19F91C51006B6EAD /* WBHotTopCell.m */,
+				B0E7D11119F93C9D006B6EAD /* WBSubtitleCell.h */,
+				B0E7D11219F93C9D006B6EAD /* WBSubtitleCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1161,6 +1475,7 @@
 			files = (
 				B08D24DD19E02E9000BB2F32 /* InfoPlist.strings in Resources */,
 				B08D24E519E02E9000BB2F32 /* Images.xcassets in Resources */,
+				B02666D419F8FFDD00F22709 /* RETableViewManager.bundle in Resources */,
 				B045836319EE549B00C21597 /* MJPhotoBrowser.bundle in Resources */,
 				B0A7817A19EEC1210051FEC4 /* MJRefresh.bundle in Resources */,
 				B07D725D19E6928800A7F6A6 /* MBProgressHUD.bundle in Resources */,
@@ -1189,22 +1504,27 @@
 				B07D727E19E6D7BA00A7F6A6 /* MJArgument.m in Sources */,
 				B07D728219E6D7BA00A7F6A6 /* MJMember.m in Sources */,
 				B0AA7B5C19E3D2AB00B4B194 /* WBNavigationController.m in Sources */,
+				B02666D719F8FFDD00F22709 /* RETableViewSection.m in Sources */,
 				B07D728019E6D7BA00A7F6A6 /* MJFoundation.m in Sources */,
 				B0A8CBE119ED5784006D3E75 /* WBPhoto.m in Sources */,
 				B04F1E6319F610B400516628 /* WBDetailViewController.m in Sources */,
 				B07D72B219E6DCF800A7F6A6 /* SDWebImageManager.m in Sources */,
 				B0B0B4B919EBE269005A14FF /* WBStatusframe.m in Sources */,
+				B02666D519F8FFDD00F22709 /* RETableViewManager.m in Sources */,
 				B04D7D6619F2353700101D8B /* WBComposePhotosView.m in Sources */,
 				B0A8CBD519ECF454006D3E75 /* NSDate+WB.m in Sources */,
 				B045836819EE549B00C21597 /* MJPhotoView.m in Sources */,
 				B07D726219E6D51D00A7F6A6 /* WBStatus.m in Sources */,
 				B08D24DF19E02E9000BB2F32 /* main.m in Sources */,
 				B07D72AF19E6DCF800A7F6A6 /* SDWebImageDecoder.m in Sources */,
+				B02666C319F8FFDD00F22709 /* REFloatItem.m in Sources */,
 				B04F1E6D19F6126300516628 /* WBBaseToolBar.m in Sources */,
+				B02666C619F8FFDD00F22709 /* RELongTextItem.m in Sources */,
 				B08D250319E02F4800BB2F32 /* WBTabBarViewController.m in Sources */,
 				B07D72B719E6DCF800A7F6A6 /* UIImage+WebP.m in Sources */,
 				B07D72AB19E6DCF800A7F6A6 /* MKAnnotationView+WebCache.m in Sources */,
 				B0B1C73F19F67F7E00C834E9 /* WBDetailCellframe.m in Sources */,
+				B02666D019F8FFDD00F22709 /* REPlaceholderTextView.m in Sources */,
 				B0A7817B19EEC1210051FEC4 /* MJRefreshBaseView.m in Sources */,
 				B07D728819E6D7BA00A7F6A6 /* NSObject+MJMember.m in Sources */,
 				B0C64F3019E4D72A003B0962 /* WBTitleButton.m in Sources */,
@@ -1212,89 +1532,135 @@
 				B07D726519E6D66200A7F6A6 /* WBUser.m in Sources */,
 				B07D72B019E6DCF800A7F6A6 /* SDWebImageDownloader.m in Sources */,
 				B045836919EE549B00C21597 /* SDWebImageManager+MJ.m in Sources */,
+				B02666EE19F9015C00F22709 /* REURLValidator.m in Sources */,
+				B02666C019F8FFDD00F22709 /* REBoolItem.m in Sources */,
 				B07D728319E6D7BA00A7F6A6 /* MJMethod.m in Sources */,
 				B07D728719E6D7BA00A7F6A6 /* NSObject+MJKeyValue.m in Sources */,
 				B0A7817E19EEC1210051FEC4 /* MJRefreshHeaderView.m in Sources */,
 				B0A7817C19EEC1210051FEC4 /* MJRefreshConst.m in Sources */,
+				B02666D119F8FFDD00F22709 /* RETableViewCell.m in Sources */,
+				B02666C919F8FFDD00F22709 /* REPickerItem.m in Sources */,
 				B057BF6619F35507009C5740 /* WBHttpTool.m in Sources */,
 				B07D727F19E6D7BA00A7F6A6 /* MJConst.m in Sources */,
 				B07D72B819E6DCF800A7F6A6 /* UIImageView+HighlightedWebCache.m in Sources */,
+				B02666B519F8FFDD00F22709 /* RETableViewCreditCardCell.m in Sources */,
 				B045836519EE549B00C21597 /* MJPhotoLoadingView.m in Sources */,
+				B02666C119F8FFDD00F22709 /* RECreditCardItem.m in Sources */,
 				B0556E0D19F7FEE200BD05FC /* SettingCell.m in Sources */,
 				B0556E0919F7FEBF00BD05FC /* SettingLableItem.m in Sources */,
+				B0E7D10719F9150A006B6EAD /* WBButton.m in Sources */,
 				B0B1C74519F6861800C834E9 /* WBDetailTopView.m in Sources */,
 				B07D72AC19E6DCF800A7F6A6 /* NSData+ImageContentType.m in Sources */,
 				B07D725C19E6928800A7F6A6 /* MBProgressHUD+MJ.m in Sources */,
+				B02666EA19F9015C00F22709 /* REValidator.m in Sources */,
 				B07D728619E6D7BA00A7F6A6 /* NSObject+MJCoding.m in Sources */,
 				B0F9B31419F78598009054E2 /* WBStatusTool.m in Sources */,
+				B02666D219F8FFDD00F22709 /* RETableViewCellStyle.m in Sources */,
+				B02666CA19F8FFDD00F22709 /* RERadioItem.m in Sources */,
 				B07D728119E6D7BA00A7F6A6 /* MJIvar.m in Sources */,
 				B0AA51FB19E2F69D0030DDBE /* WBTabBarButton.m in Sources */,
 				B0556E1019F7FEF700BD05FC /* SettingBaseViewController.m in Sources */,
 				B08EF99C19F6481100C3C1CC /* WBBaseStatusCell.m in Sources */,
+				B02666BE19F8FFDD00F22709 /* RETableViewSegmentedCell.m in Sources */,
 				B07D72B919E6DCF800A7F6A6 /* UIImageView+WebCache.m in Sources */,
+				B02666EB19F9015C00F22709 /* REEmailValidator.m in Sources */,
+				B02666BA19F8FFDD00F22709 /* RETableViewLongTextCell.m in Sources */,
 				B07D72B619E6DCF800A7F6A6 /* UIImage+MultiFormat.m in Sources */,
 				B0BCDE3019F7A80300B82F49 /* WBRepostCell.m in Sources */,
+				B02666C219F8FFDD00F22709 /* REDateTimeItem.m in Sources */,
 				B07D728519E6D7BA00A7F6A6 /* MJTypeEncoding.m in Sources */,
 				B07D72B419E6DCF800A7F6A6 /* UIButton+WebCache.m in Sources */,
 				B07D723F19E6649500A7F6A6 /* AFHTTPSessionManager.m in Sources */,
 				B07D72B319E6DCF800A7F6A6 /* SDWebImagePrefetcher.m in Sources */,
 				B0D09B0819F0EB3B00671E7E /* WBTextView.m in Sources */,
+				B02666FC19F906E300F22709 /* WBADImageCell.m in Sources */,
 				B0BCDE3319F7AA6400B82F49 /* WBBaseTextframe.m in Sources */,
+				B0E7D11619F93CBB006B6EAD /* WBSubtitleItem.m in Sources */,
+				B02666BC19F8FFDD00F22709 /* RETableViewOptionCell.m in Sources */,
 				B0AA44B519E53CB0004A8C14 /* WBNewFeatureController.m in Sources */,
 				B08D24E319E02E9000BB2F32 /* WBAppDelegate.m in Sources */,
+				B02666CE19F8FFDD00F22709 /* REActionBar.m in Sources */,
+				B02666B619F8FFDD00F22709 /* RETableViewDateTimeCell.m in Sources */,
 				B07D72AE19E6DCF800A7F6A6 /* SDWebImageCompat.m in Sources */,
+				B02666EC19F9015C00F22709 /* RELengthValidator.m in Sources */,
 				B07D724019E6649500A7F6A6 /* AFNetworkReachabilityManager.m in Sources */,
 				B0BCDE2419F79BAF00B82F49 /* WBComment.m in Sources */,
 				B07D724519E6649500A7F6A6 /* AFURLSessionManager.m in Sources */,
 				B07D72B519E6DCF800A7F6A6 /* UIImage+GIF.m in Sources */,
 				B045836719EE549B00C21597 /* MJPhotoToolbar.m in Sources */,
+				B02666D619F8FFDD00F22709 /* RETableViewOptionsController.m in Sources */,
 				B0F2CC4019F6B0BD00296DA3 /* WBDetailHeader.m in Sources */,
 				B045836619EE549B00C21597 /* MJPhotoProgressView.m in Sources */,
 				B08D250C19E02F9F00BB2F32 /* WBDiscoverTableViewController.m in Sources */,
 				B0AA51F519E2E47D0030DDBE /* WBTabBar.m in Sources */,
 				B07D724219E6649500A7F6A6 /* AFURLConnectionOperation.m in Sources */,
 				B07D724419E6649500A7F6A6 /* AFURLResponseSerialization.m in Sources */,
+				B02666BB19F8FFDD00F22709 /* RETableViewNumberCell.m in Sources */,
 				B0556E0619F7FEBF00BD05FC /* SettingItem.m in Sources */,
 				B0556E1319F80DDF00BD05FC /* WBTestViewController.m in Sources */,
 				B0BCDE2119F7905500B82F49 /* WBUserTool.m in Sources */,
+				B02666B719F8FFDD00F22709 /* RETableViewFloatCell.m in Sources */,
 				B0B1C72F19F658AD00C834E9 /* WBDetailCell.m in Sources */,
+				B02666F519F9019400F22709 /* REFormattedNumberField.m in Sources */,
+				B02666E819F9015C00F22709 /* NSError+REValidation.m in Sources */,
+				B02666BF19F8FFDD00F22709 /* RETableViewTextCell.m in Sources */,
+				B0E7D10D19F91C51006B6EAD /* WBHotTopCell.m in Sources */,
 				B0AA7B6419E4479B00B4B194 /* WBSearchBar.m in Sources */,
 				B0D09B0B19F0FFDC00671E7E /* WBComposeToolBar.m in Sources */,
 				B045834E19EE3D4200C21597 /* WBPhotoView.m in Sources */,
 				B07D724319E6649500A7F6A6 /* AFURLRequestSerialization.m in Sources */,
 				B0D09B0519F0E85400671E7E /* WBComposeViewController.m in Sources */,
 				B07D725219E6863700A7F6A6 /* WBWeiboTool.m in Sources */,
+				B02666D319F8FFDD00F22709 /* RETableViewItem.m in Sources */,
+				B02666F419F9019400F22709 /* NSString+RENumberFormat.m in Sources */,
 				B0B0B4B619EBD90C005A14FF /* WBStatusCell.m in Sources */,
 				B0DB1B7319E2AB66009FD1A5 /* UIImage+WB.m in Sources */,
 				B08D250919E02F8600BB2F32 /* WBMsgTableViewController.m in Sources */,
 				B0556E0719F7FEBF00BD05FC /* SettingSwitchItem.m in Sources */,
 				B07D725E19E6928800A7F6A6 /* MBProgressHUD.m in Sources */,
+				B02666C719F8FFDD00F22709 /* REMultipleChoiceItem.m in Sources */,
 				B0A8CBDB19ED4C13006D3E75 /* WBRetweetStatusView.m in Sources */,
 				B07D722819E65D6900A7F6A6 /* WBOAuthViewController.m in Sources */,
+				B02666B819F8FFDD00F22709 /* RETableViewInlineDatePickerCell.m in Sources */,
 				B08D250F19E02FAA00BB2F32 /* WBMeTableViewController.m in Sources */,
 				B0556E0819F7FEBF00BD05FC /* SettingArrowItem.m in Sources */,
+				B02666B919F8FFDD00F22709 /* RETableViewInlinePickerCell.m in Sources */,
 				B07D72B119E6DCF800A7F6A6 /* SDWebImageDownloaderOperation.m in Sources */,
+				B0E7D10A19F91935006B6EAD /* WBHotTopItem.m in Sources */,
+				B02666B419F8FFDD00F22709 /* RETableViewBoolCell.m in Sources */,
+				B0E7D11319F93C9D006B6EAD /* WBSubtitleCell.m in Sources */,
 				B0556E0A19F7FEBF00BD05FC /* SettingGroup.m in Sources */,
 				B045835119EE400600C21597 /* WBPhotosView.m in Sources */,
 				B0BCDE2719F7A3E600B82F49 /* WBBaseStatus.m in Sources */,
 				B04F1E7119F617BE00516628 /* WBDetailToolBar.m in Sources */,
 				B0A7818119EEC1210051FEC4 /* UIView+MJExtension.m in Sources */,
 				B08D250619E02F7A00BB2F32 /* WBHomeTableViewController.m in Sources */,
+				B02666C419F8FFDD00F22709 /* REInlineDatePickerItem.m in Sources */,
 				B07D72BA19E6DCF800A7F6A6 /* UIView+WebCacheOperation.m in Sources */,
 				B07D723E19E6649500A7F6A6 /* AFHTTPRequestOperationManager.m in Sources */,
 				B0A7817D19EEC1210051FEC4 /* MJRefreshFooterView.m in Sources */,
 				B0A7818019EEC1210051FEC4 /* UIScrollView+MJRefresh.m in Sources */,
+				B02666CB19F8FFDD00F22709 /* RESegmentedItem.m in Sources */,
 				B07D724A19E6716900A7F6A6 /* WBAccount.m in Sources */,
 				B07D728419E6D7BA00A7F6A6 /* MJType.m in Sources */,
 				B0B1C74219F6830400C834E9 /* WBDetailRetweetView.m in Sources */,
+				B02666CF19F8FFDD00F22709 /* RECommonFunctions.m in Sources */,
 				B07D724119E6649500A7F6A6 /* AFSecurityPolicy.m in Sources */,
 				B0A8CBD819ED1E61006D3E75 /* WBStatusToolBar.m in Sources */,
 				B07D724E19E67B4C00A7F6A6 /* WBAccountTool.m in Sources */,
 				B07D72AD19E6DCF800A7F6A6 /* SDImageCache.m in Sources */,
 				B045836419EE549B00C21597 /* MJPhotoBrowser.m in Sources */,
 				B0AA7B5F19E43F5D00B4B194 /* UIBarButtonItem+WB.m in Sources */,
+				B02666ED19F9015C00F22709 /* REPresenceValidator.m in Sources */,
+				B02666CD19F8FFDD00F22709 /* NSString+RETableViewManagerAdditions.m in Sources */,
 				B0A8CBDE19ED506D006D3E75 /* WBStatusTopView.m in Sources */,
+				B02666F919F905E600F22709 /* WBADImageItem.m in Sources */,
+				B02666E919F9015C00F22709 /* REValidation.m in Sources */,
 				B0BCDE2D19F7A7E800B82F49 /* WBCommentCell.m in Sources */,
+				B02666BD19F8FFDD00F22709 /* RETableViewPickerCell.m in Sources */,
+				B02666CC19F8FFDD00F22709 /* RETextItem.m in Sources */,
+				B02666C519F8FFDD00F22709 /* REInlinePickerItem.m in Sources */,
+				B02666C819F8FFDD00F22709 /* RENumberItem.m in Sources */,
 				B08EF99F19F64A8700C3C1CC /* WBBaseStatusframe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
